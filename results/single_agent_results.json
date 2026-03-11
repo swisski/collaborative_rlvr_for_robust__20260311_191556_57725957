@@ -1,0 +1,452 @@
+[
+  {
+    "problem_id": "orig_1025",
+    "type": "original",
+    "original_id": 1025,
+    "gold_answer": "30",
+    "predicted_answer": "40",
+    "correct": false,
+    "solution": "To determine how many eggs the friends found, we need to follow these steps:\n\n1. Calculate the total number of eggs found by the Smith twins.\n2. Subtract the number of eggs found by the Smith twins from the total number of eggs found by the team.\n3. The remaining eggs are the ones found by the friends.\n\nLet's start with the first step. The Smith twins each found 30 eggs, so together they found:\n\\[ 30 + 30 = 60 \\text{ eggs} \\]\n\nNext, we subtract the number of eggs found by the Smith twins from the total number of eggs found by the team. The team found 100 eggs in total, so the number of eggs found by the friends is:\n\\[ 100 - 60 = 40 \\text{ eggs} \\]\n\nTherefore, the number of eggs found by the friends is \\(\\boxed{40}\\).",
+    "time_s": 13.883018255233765
+  },
+  {
+    "problem_id": "sym_1025_inst1",
+    "type": "symbolic",
+    "original_id": 1025,
+    "gold_answer": "166",
+    "predicted_answer": "166",
+    "correct": true,
+    "solution": "To determine how many balls the friends found, we need to follow these steps:\n\n1. Identify the total number of balls initially.\n2. Determine how many balls the complementary group found.\n3. Subtract the number of balls found by the complementary group from the total number of balls to find out how many balls the friends found.\n\nLet's start with the total number of balls. The problem states that the total number of balls is 200.\n\nNext, we know that the Complementary group (which includes the friends) found 12 balls that the other group did not. The other group consists of the two loop twins, each of whom found 11 balls. Therefore, the total number of balls found by the loop twins is:\n\\[ 11 + 11 = 22 \\]\n\nNow, we can find out how many balls the friends found by subtracting the number of balls found by the loop twins and the complementary group from the total number of balls:\n\\[ 200 - 22 - 12 = 166 \\]\n\nSo, the number of balls that the friends found is:\n\\[\n\\boxed{166}\n\\]",
+    "time_s": 19.132256031036377
+  },
+  {
+    "problem_id": "sym_1025_inst5",
+    "type": "symbolic",
+    "original_id": 1025,
+    "gold_answer": "46",
+    "predicted_answer": "66",
+    "correct": false,
+    "solution": "To determine how many differences the friends found, we need to follow these steps:\n\n1. Identify the total number of differences found by the team.\n2. Calculate the number of differences found by the twins.\n3. Subtract the number of differences found by the twins from the total number of differences to find out how many differences the friends found.\n\nLet's start with the total number of differences found by the team. According to the problem, the team found a total of 100 differences.\n\nNext, we calculate the number of differences found by the twins. Since there are two twins and each found 17 differences, the total number of differences found by the twins is:\n\\[ 17 + 17 = 34 \\]\n\nNow, we subtract the number of differences found by the twins from the total number of differences to find out how many differences the friends found:\n\\[ 100 - 34 = 66 \\]\n\nTherefore, the number of differences found by the friends is \\(\\boxed{66}\\).",
+    "time_s": 13.843563795089722
+  },
+  {
+    "problem_id": "orig_684",
+    "type": "original",
+    "original_id": 684,
+    "gold_answer": "11",
+    "predicted_answer": "11",
+    "correct": true,
+    "solution": "To determine how much longer John and Jack have to get to school without being late, we need to calculate the total time they have already spent walking and then subtract this from the total time they have available.\n\n1. First, we know that John and Jack have a total of 30 minutes to get to school.\n2. It takes them 6 minutes to get to the corner where the library is.\n3. It takes them another 13 minutes to get to the fire station.\n\nWe can find the total time they have already spent walking by adding the time it takes to get to the library and the time it takes to get to the fire station:\n\\[ 6 \\text{ minutes} + 13 \\text{ minutes} = 19 \\text{ minutes} \\]\n\nNext, we subtract the time they have already spent walking from the total time they have available to get to school:\n\\[ 30 \\text{ minutes} - 19 \\text{ minutes} = 11 \\text{ minutes} \\]\n\nTherefore, John and Jack have \\(\\boxed{11}\\) minutes longer to get to school without being late.",
+    "time_s": 15.88283634185791
+  },
+  {
+    "problem_id": "sym_684_inst13",
+    "type": "symbolic",
+    "original_id": 684,
+    "gold_answer": "36",
+    "predicted_answer": "36",
+    "correct": true,
+    "solution": "To determine how much longer Winnie and Liam have to walk to the bank without being late, we need to follow these steps:\n\n1. **Calculate the total time spent walking to the corner and then to the park:**\n   - Time to get to the corner: 28 minutes\n   - Time to get from the corner to the park: 18 minutes\n   - Total time spent walking: \\( 28 + 18 = 46 \\) minutes\n\n2. **Determine the total time available to walk to the bank:**\n   - Total time available: 82 minutes\n\n3. **Calculate the remaining time to walk to the bank:**\n   - Time remaining: \\( 82 - 46 = 36 \\) minutes\n\nTherefore, Winnie and Liam have \\(\\boxed{36}\\) minutes to walk to the bank without being late.",
+    "time_s": 12.316862344741821
+  },
+  {
+    "problem_id": "sym_684_inst14",
+    "type": "symbolic",
+    "original_id": 684,
+    "gold_answer": "72",
+    "predicted_answer": "72",
+    "correct": true,
+    "solution": "To determine how much longer Kayla and Quinn have to walk to the bank without being late, we need to follow these steps:\n\n1. Calculate the total time they have already spent walking to the corner and then to the park.\n2. Subtract this total time from the total time they have available to walk to the bank.\n\nFirst, let's find the total time they have already spent walking:\n- Time to get to the corner: 14 minutes\n- Time to get to the park: 21 minutes\n\nAdding these times together:\n\\[ 14 + 21 = 35 \\text{ minutes} \\]\n\nNext, we subtract the time they have already spent from the total time they have available to walk to the bank:\n- Total time available: 107 minutes\n- Time already spent: 35 minutes\n\nSubtracting these times:\n\\[ 107 - 35 = 72 \\text{ minutes} \\]\n\nTherefore, Kayla and Quinn have \\(\\boxed{72}\\) minutes longer to get to the bank without being late.",
+    "time_s": 14.920368432998657
+  },
+  {
+    "problem_id": "orig_740",
+    "type": "original",
+    "original_id": 740,
+    "gold_answer": "25",
+    "predicted_answer": "25",
+    "correct": true,
+    "solution": "To determine how many students like to play video games, we need to follow these steps:\n\n1. Identify the total number of students in the class.\n2. Determine the number of students who like to play basketball.\n3. Calculate the number of students who like to play music.\n4. Subtract the number of students who like to play basketball and music from the total number of students to find the number of students who like to play video games.\n\nLet's start with the given information:\n- Total number of students = 50\n- Number of students who like to bake = 10\n- Number of students who like to play basketball = 5\n- The rest of the students like to either play video games or play music.\n\nFirst, we calculate the number of students who like to play music. According to the problem, the number of students who like to play music is twice the number of students who prefer playing basketball. Therefore, the number of students who like to play music is:\n\\[ 2 \\times 5 = 10 \\]\n\nNext, we find the number of students who like to play video games. This is the total number of students minus the number of students who like to bake, play basketball, and play music. So, we subtract the number of students who like to bake, play basketball, and play music from the total number of students:\n\\[ 50 - 10 - 5 - 10 = 25 \\]\n\n",
+    "time_s": 19.978063344955444
+  },
+  {
+    "problem_id": "sym_740_inst32",
+    "type": "symbolic",
+    "original_id": 740,
+    "gold_answer": "27",
+    "predicted_answer": "27",
+    "correct": true,
+    "solution": "To determine how many students like to bake, we need to follow these steps:\n\n1. Identify the total number of students in the class.\n2. Determine the number of students who like to bake by first finding out how many students like to hike.\n3. Use the information given to find the number of students who like to bake.\n\nLet's start with the total number of students:\n\\[ \\text{Total number of students} = 145 \\]\n\nNext, we know the number of students who like to read:\n\\[ \\text{Number of students who like to read} = 88 \\]\n\nWe also know the number of students who like to play basketball:\n\\[ \\text{Number of students who like to play basketball} = 10 \\]\n\nLet's denote the number of students who like to bake as \\( B \\) and the number of students who like to hike as \\( H \\). According to the problem, the number of students who like to hike is twice the number of students who like to play basketball:\n\\[ H = 2 \\times 10 = 20 \\]\n\nNow, we can find the number of students who like to bake by subtracting the number of students who like to read, play basketball, and hike from the total number of students:\n\\[ \\text{Number of students who like to bake} = 145 - 88 - 10 - 20 = 27 \\]\n\nTherefore",
+    "time_s": 19.934765815734863
+  },
+  {
+    "problem_id": "sym_740_inst38",
+    "type": "symbolic",
+    "original_id": 740,
+    "gold_answer": "40",
+    "predicted_answer": "4",
+    "correct": false,
+    "solution": "To determine how many students like to read, we need to follow these steps:\n\n1. **Identify the total number of students:**\n   \\[\n   \\text{Total students} = 121\n   \\]\n\n2. **Determine the number of students who like to play video games:**\n   \\[\n   \\text{Students playing video games} = 69\n   \\]\n\n3. **Determine the number of students who like to play volleyball:**\n   \\[\n   \\text{Students playing volleyball} = 4\n   \\]\n\n4. **Calculate the number of students who like to read or paint:**\n   \\[\n   \\text{Students reading or painting} = \\text{Total students} - (\\text{Students playing video games} + \\text{Students playing volleyball})\n   \\]\n   \\[\n   \\text{Students reading or painting} = 121 - (69 + 4) = 121 - 73 = 48\n   \\]\n\n5. **Determine the number of students who like to paint:**\n   According to the problem, the number of students who like to paint is twice the number of students who like to play volleyball.\n   \\[\n   \\text{Students painting} = 2 \\times \\text{Students playing volleyball}\n   \\]\n   \\[\n   \\text{Students painting} = 2 \\times 4 = ",
+    "time_s": 19.856117963790894
+  },
+  {
+    "problem_id": "orig_718",
+    "type": "original",
+    "original_id": 718,
+    "gold_answer": "2",
+    "predicted_answer": "2",
+    "correct": true,
+    "solution": "To determine how many people accept the position, we need to follow the given steps in sequence:\n\n1. **Calculate the number of people who receive interviews:**\n   - 30% of the 100 people who apply receive interviews.\n   \\[\n   0.30 \\times 100 = 30\n   \\]\n   So, 30 people receive interviews.\n\n2. **Calculate the number of people who receive a job offer:**\n   - 20% of the people who receive interviews receive a job offer.\n   \\[\n   0.20 \\times 30 = 6\n   \\]\n   So, 6 people receive a job offer.\n\n3. **Calculate the number of people who accept the position:**\n   - A third of the people who receive a job offer accept the position.\n   \\[\n   \\frac{1}{3} \\times 6 = 2\n   \\]\n   So, 2 people accept the position.\n\nThus, the number of people who accept the position is \\(\\boxed{2}\\).",
+    "time_s": 15.160755395889282
+  },
+  {
+    "problem_id": "sym_718_inst1",
+    "type": "symbolic",
+    "original_id": 718,
+    "gold_answer": "12",
+    "predicted_answer": "12",
+    "correct": true,
+    "solution": "To determine how many people accept the position, we need to follow the steps outlined in the problem and perform the calculations sequentially.\n\n1. **Calculate the number of people who receive interviews:**\n   - 30% of the 800 people apply receive interviews.\n   \\[\n   0.30 \\times 800 = 240\n   \\]\n   So, 240 people receive interviews.\n\n2. **Calculate the number of people who receive job offers:**\n   - 40% of those who receive interviews receive job offers.\n   \\[\n   0.40 \\times 240 = 96\n   \\]\n   So, 96 people receive job offers.\n\n3. **Calculate the number of people who accept the position:**\n   - One-eighth of those who receive job offers accept the position.\n   \\[\n   \\frac{1}{8} \\times 96 = 12\n   \\]\n   So, 12 people accept the position.\n\nTherefore, the number of people who accept the position is \\(\\boxed{12}\\).",
+    "time_s": 15.941012620925903
+  },
+  {
+    "problem_id": "sym_718_inst35",
+    "type": "symbolic",
+    "original_id": 718,
+    "gold_answer": "6",
+    "predicted_answer": "6",
+    "correct": true,
+    "solution": "To determine how many people accept the position, we need to follow the steps outlined in the problem and perform the calculations sequentially.\n\n1. **Calculate the number of people who receive interviews:**\n   - 16% of the 750 people apply for the job receive interviews.\n   \\[\n   0.16 \\times 750 = 120\n   \\]\n   So, 120 people receive interviews.\n\n2. **Calculate the number of people who receive a job offer:**\n   - 15% of the people who receive interviews receive a job offer.\n   \\[\n   0.15 \\times 120 = 18\n   \\]\n   So, 18 people receive a job offer.\n\n3. **Calculate the number of people who accept the position:**\n   - One-third of the people who receive a job offer accept the position.\n   \\[\n   \\frac{1}{3} \\times 18 = 6\n   \\]\n   So, 6 people accept the position.\n\nTherefore, the number of people who accept the position is \\(\\boxed{6}\\).",
+    "time_s": 16.205014944076538
+  },
+  {
+    "problem_id": "orig_788",
+    "type": "original",
+    "original_id": 788,
+    "gold_answer": "100",
+    "predicted_answer": "100",
+    "correct": true,
+    "solution": "To determine how much money John is missing, we need to follow these steps:\n\n1. Calculate the total cost of the trip.\n2. Determine how much the school will cover.\n3. Determine how much John needs to cover on his own.\n4. Calculate how much money John is missing.\n\nFirst, the total cost of the trip is $300.\n\nNext, the school has decided to cover half of the cost of the trip. Therefore, the school will cover:\n\\[\n\\frac{300}{2} = 150 \\text{ dollars}\n\\]\n\nJohn has $50. To find out how much more money he needs, we subtract the amount he has from the total cost of the trip:\n\\[\n300 - 50 = 250 \\text{ dollars}\n\\]\n\nSince the school will cover $150, the amount of money John still needs to cover is:\n\\[\n250 - 150 = 100 \\text{ dollars}\n\\]\n\nTherefore, the amount of money John is missing is:\n\\[\n\\boxed{100}\n\\]",
+    "time_s": 15.869384527206421
+  },
+  {
+    "problem_id": "sym_788_inst12",
+    "type": "symbolic",
+    "original_id": 788,
+    "gold_answer": "390",
+    "predicted_answer": "390",
+    "correct": true,
+    "solution": "To determine how much money Ben is missing, we need to follow these steps:\n\n1. Calculate the total cost of the music festival.\n2. Determine the amount the youth club will cover.\n3. Subtract the amount covered by the youth club from the total cost to find out how much money Ben is missing.\n\nThe total cost of the music festival is given as \\( \\text{erator} 980 \\).\n\nThe youth club will cover \\( \\frac{1}{2} \\) of the cost of the music festival. Therefore, the amount covered by the youth club is:\n\\[\n\\frac{1}{2} \\times 980 = 490\n\\]\n\nBen has \\( 100 \\) dollars. To find out how much money he is missing, we subtract the amount he has from the amount the youth club will cover:\n\\[\n490 - 100 = 390\n\\]\n\nThus, the amount of money Ben is missing is:\n\\[\n\\boxed{390}\n\\]",
+    "time_s": 14.645621299743652
+  },
+  {
+    "problem_id": "sym_788_inst45",
+    "type": "symbolic",
+    "original_id": 788,
+    "gold_answer": "519",
+    "predicted_answer": "519",
+    "correct": true,
+    "solution": "To determine how much money Oliver is missing, we need to follow these steps:\n\n1. Calculate the amount of money the youth club is contributing.\n2. Determine how much money Oliver needs to cover the remaining cost.\n3. Subtract the amount Oliver has from the remaining cost to find out how much he is missing.\n\nFirst, let's calculate the amount the youth club is contributing. The youth club is covering \\(\\frac{1}{5}\\) of the cost of the music festival. The cost of the music festival is $730.\n\n\\[\n\\text{Amount contributed by the youth club} = \\frac{1}{5} \\times 730 = \\frac{730}{5} = 146\n\\]\n\nNext, we need to find out how much money Oliver still needs to cover after the youth club's contribution. The total cost of the music festival is $730, and the youth club is contributing $146.\n\n\\[\n\\text{Remaining cost} = 730 - 146 = 584\n\\]\n\nOliver has $65. To find out how much more money he needs, we subtract the amount he has from the remaining cost.\n\n\\[\n\\text{Amount Oliver is missing} = 584 - 65 = 519\n\\]\n\nTherefore, Oliver is missing \\(\\boxed{519}\\) dollars.",
+    "time_s": 19.780593395233154
+  },
+  {
+    "problem_id": "orig_1277",
+    "type": "original",
+    "original_id": 1277,
+    "gold_answer": "48",
+    "predicted_answer": "48",
+    "correct": true,
+    "solution": "To find the average of Mia's and Emma's ages, we need to follow these steps:\n\n1. Determine Emma's age.\n2. Calculate the sum of their ages.\n3. Divide the sum by 2 to find the average.\n\nFirst, we know that Mia is 40 years old and that Mia and Emma are currently 16 years apart in age. Since Mia is younger than Emma, we can find Emma's age by adding 16 years to Mia's age:\n\n\\[ \\text{Emma's age} = 40 + 16 = 56 \\]\n\nNext, we calculate the sum of their ages:\n\n\\[ \\text{Sum of their ages} = 40 + 56 = 96 \\]\n\nFinally, we find the average of their ages by dividing the sum by 2:\n\n\\[ \\text{Average of their ages} = \\frac{96}{2} = 48 \\]\n\nTherefore, the average of Mia's and Emma's ages is \\(\\boxed{48}\\).",
+    "time_s": 14.237412452697754
+  },
+  {
+    "problem_id": "sym_1277_inst41",
+    "type": "symbolic",
+    "original_id": 1277,
+    "gold_answer": "30",
+    "predicted_answer": "30",
+    "correct": true,
+    "solution": "To determine the average age of Pavel and Kai, we first need to find out how old Kai is. We know that Pavel is 17 years old and that he and Kai are currently 26 years apart in age. Since Pavel is younger than Kai, we can calculate Kai's age as follows:\n\n\\[\n\\text{Kai's age} = \\text{Pavel's age} + 26 = 17 + 26 = 43\n\\]\n\nNow that we know Kai is 43 years old, we can find the average of their ages by adding their ages together and then dividing by 2:\n\n\\[\n\\text{Average age} = \\frac{\\text{Pavel's age} + \\text{Kai's age}}{2} = \\frac{17 + 43}{2} = \\frac{60}{2} = 30\n\\]\n\nThus, the average of their ages is \\(\\boxed{30}\\).",
+    "time_s": 13.766380071640015
+  },
+  {
+    "problem_id": "sym_1277_inst44",
+    "type": "symbolic",
+    "original_id": 1277,
+    "gold_answer": "37",
+    "predicted_answer": "37",
+    "correct": true,
+    "solution": "To determine the average age of Fatima and Camila, we need to follow these steps:\n\n1. Identify the age of Fatima.\n2. Determine the age of Camila.\n3. Calculate the sum of their ages.\n4. Find the average of their ages.\n\nStep 1: Identify the age of Fatima.\n Fatima is 33 years old.\n\nStep 2: Determine the age of Camila.\nWe know that Fatima is younger than Camila and they are currently 8 years apart in age. Therefore, Camila's age is:\n\\[ 33 + 8 = 41 \\]\nSo, Camila is 41 years old.\n\nStep 3: Calculate the sum of their ages.\nThe sum of Fatima's and Camila's ages is:\n\\[ 33 + 41 = 74 \\]\n\nStep 4: Find the average of their ages.\nThe average age is the sum of their ages divided by the number of people (which is 2):\n\\[ \\frac{74}{2} = 37 \\]\n\nThus, the average of their ages is \\(\\boxed{37}\\).",
+    "time_s": 16.000094652175903
+  },
+  {
+    "problem_id": "orig_955",
+    "type": "original",
+    "original_id": 955,
+    "gold_answer": "100",
+    "predicted_answer": "2",
+    "correct": false,
+    "solution": "To determine the total number of unoccupied beds in the hospital after 2 weeks, we need to follow these steps:\n\n1. Calculate the initial number of occupied beds.\n2. Determine the number of occupied beds after each day for 2 weeks (14 days).\n3. Calculate the total number of occupied beds after 14 days.\n4. Subtract the total number of occupied beds from the total capacity to find the number of unoccupied beds.\n\nLet's start with the initial number of occupied beds:\nThe hospital has a capacity of 1000 beds and is 1/5 occupied initially.\n\\[ \\text{Initial occupied beds} = \\frac{1000}{5} = 200 \\]\n\nNext, we need to determine the number of occupied beds after each day for 14 days. Each day, 50 more patients are admitted.\n\\[ \\text{Number of occupied beds after 14 days} = 200 + 50 \\times 14 = 200 + 700 = 900 \\]\n\nNow, we calculate the total number of unoccupied beds after 14 days:\n\\[ \\text{Total capacity} = 1000 \\]\n\\[ \\text{Number of unoccupied beds} = 1000 - 900 = 100 \\]\n\nTherefore, the total number of unoccupied beds in the hospital after 2",
+    "time_s": 20.074413299560547
+  },
+  {
+    "problem_id": "sym_955_inst34",
+    "type": "symbolic",
+    "original_id": 955,
+    "gold_answer": "740",
+    "predicted_answer": "740",
+    "correct": true,
+    "solution": "To determine the total number of unoccupied rooms in the clinic after 2 weeks, we need to follow these steps:\n\n1. Calculate the number of occupied rooms initially.\n2. Determine the number of occupied rooms after 2 weeks.\n3. Calculate the number of unoccupied rooms after 2 weeks.\n\n**Step 1: Calculate the number of occupied rooms initially.**\n\nThe clinic has a capacity of 1700 rooms and is 2/5 occupied initially.\n\\[\n\\text{Occupied rooms initially} = \\frac{2}{5} \\times 1700 = \\frac{3400}{5} = 680\n\\]\n\n**Step 2: Determine the number of occupied rooms after 2 weeks.**\n\nEach day, 20 patients are admitted into the clinic. Over 2 weeks (14 days), the number of new patients admitted is:\n\\[\n20 \\times 14 = 280\n\\]\nSo, the total number of occupied rooms after 2 weeks is:\n\\[\n680 + 280 = 960\n\\]\n\n**Step 3: Calculate the number of unoccupied rooms after 2 weeks.**\n\nThe total number of rooms in the clinic is 1700. Therefore, the number of unoccupied rooms after 2 weeks is:\n\\[\n1700 - 960 = 740\n",
+    "time_s": 20.041200399398804
+  },
+  {
+    "problem_id": "sym_955_inst26",
+    "type": "symbolic",
+    "original_id": 955,
+    "gold_answer": "480",
+    "predicted_answer": "3",
+    "correct": false,
+    "solution": "To determine the total number of unoccupied beds in the hospital after 3 weeks, we need to follow these steps:\n\n1. Calculate the initial number of occupied beds.\n2. Determine the number of unoccupied beds initially.\n3. Calculate the number of patients admitted over 3 weeks.\n4. Determine the total number of occupied beds after 3 weeks.\n5. Calculate the total number of unoccupied beds after 3 weeks.\n\n**Step 1: Calculate the initial number of occupied beds.**\n\nThe hospital has a capacity of 1700 beds and is 1/10 occupied initially.\n\\[\n\\text{Initial occupied beds} = \\frac{1700}{10} = 170\n\\]\n\n**Step 2: Determine the number of unoccupied beds initially.**\n\n\\[\n\\text{Initial unoccupied beds} = 1700 - 170 = 1530\n\\]\n\n**Step 3: Calculate the number of patients admitted over 3 weeks.**\n\nThere are 50 patients admitted each day, and there are 7 days in a week. Therefore, in 3 weeks, the number of patients admitted is:\n\\[\n\\text{Total patients admitted in 3 weeks} = 50 \\times 7 \\times 3 = 1050\n\\]\n\n**Step 4: Determine the total number of occupied beds after 3 weeks.**\n\n",
+    "time_s": 20.310229301452637
+  },
+  {
+    "problem_id": "orig_1133",
+    "type": "original",
+    "original_id": 1133,
+    "gold_answer": "50",
+    "predicted_answer": "2",
+    "correct": false,
+    "solution": "To determine the total time Grandma spends walking, we need to break down the problem into smaller parts and calculate the time spent on each part of the walk.\n\nFirst, let's denote the speed at which Grandma walks on the beach as \\( v \\) miles per minute. Since she walks 2 miles on the beach in 40 minutes, we can find her speed \\( v \\) as follows:\n\\[\nv = \\frac{2 \\text{ miles}}{40 \\text{ minutes}} = \\frac{1}{20} \\text{ miles per minute}\n\\]\n\nNext, we know that on the sidewalk, Grandma walks at twice the speed of her beach walking speed. Therefore, her speed on the sidewalk is:\n\\[\n2v = 2 \\times \\frac{1}{20} = \\frac{1}{10} \\text{ miles per minute}\n\\]\n\nNow, we need to find out how long it takes her to walk 1 mile on the sidewalk. Since her speed on the sidewalk is \\(\\frac{1}{10}\\) miles per minute, the time to walk 1 mile is:\n\\[\n\\text{Time on the sidewalk} = \\frac{1 \\text{ mile}}{\\frac{1}{10} \\text{ miles per minute}} = 10 \\text{ minutes}\n\\]\n\nWe already know that it takes her 40 minutes to walk 2 miles on the",
+    "time_s": 20.384683847427368
+  },
+  {
+    "problem_id": "sym_1133_inst14",
+    "type": "symbolic",
+    "original_id": 1133,
+    "gold_answer": "86",
+    "predicted_answer": "13",
+    "correct": false,
+    "solution": "To determine the total time it takes for Priya to complete her 23-mile walk, we need to break down the problem into smaller parts and calculate the time spent on each segment of the walk.\n\n1. **Calculate the time spent on the beach:**\n   - Priya walks 10 miles on the beach.\n   - She spends 60 minutes on the beach.\n   - Therefore, the time spent on the beach is already given as 60 minutes.\n\n2. **Determine the walking speed on the beach:**\n   - Let \\( v \\) be the walking speed on the beach in miles per minute.\n   - Since she walks 10 miles in 60 minutes, we have:\n     \\[\n     v = \\frac{10 \\text{ miles}}{60 \\text{ minutes}} = \\frac{1}{6} \\text{ miles per minute}\n     \\]\n\n3. **Determine the walking speed on the sidewalk:**\n   - Priya walks on the sidewalk at three times the speed she does on the beach.\n   - Therefore, her speed on the sidewalk is:\n     \\[\n     3v = 3 \\times \\frac{1}{6} = \\frac{1}{2} \\text{ miles per minute}\n     \\]\n\n4. **Calculate the time spent on the sidewalk:**\n   - Priya walks 13 miles on the sidewalk.\n   - Using her speed on",
+    "time_s": 20.182827472686768
+  },
+  {
+    "problem_id": "sym_1133_inst28",
+    "type": "symbolic",
+    "original_id": 1133,
+    "gold_answer": "66",
+    "predicted_answer": "11",
+    "correct": false,
+    "solution": "To determine the total time Kayla spends walking, we need to break down her walk into two segments: the beach and the sidewalk. We know that Kayla walks 22 kilometers in total, with 11 kilometers on the beach and 11 kilometers on the sidewalk. We also know that she spends 44 minutes walking on the beach and that her speed on the sidewalk is twice her speed on the beach.\n\nFirst, let's find Kayla's speed on the beach. Since she walks 11 kilometers in 44 minutes, her speed on the beach is:\n\\[\n\\text{Speed on the beach} = \\frac{11 \\text{ km}}{44 \\text{ min}} = \\frac{1}{4} \\text{ km/min}\n\\]\n\nSince her speed on the sidewalk is twice her speed on the beach, her speed on the sidewalk is:\n\\[\n\\text{Speed on the sidewalk} = 2 \\times \\frac{1}{4} \\text{ km/min} = \\frac{1}{2} \\text{ km/min}\n\\]\n\nNext, we calculate the time it takes for Kayla to walk 11 kilometers on the sidewalk. Using her speed on the sidewalk, the time is:\n\\[\n\\text{Time on the sidewalk} = \\frac{11 \\text{ km}}{\\frac{1}{2} \\text{ km/min}} = 11 \\",
+    "time_s": 20.407129526138306
+  },
+  {
+    "problem_id": "orig_99",
+    "type": "original",
+    "original_id": 99,
+    "gold_answer": "58",
+    "predicted_answer": "40",
+    "correct": false,
+    "solution": "To determine how many potted plants Mary will remain with, we need to follow these steps:\n\n1. Calculate the total number of potted plants Mary initially has.\n2. Determine how many potted plants she will give away.\n3. Subtract the number of potted plants given away from the total number of potted plants she initially has.\n\nFirst, let's calculate the total number of potted plants Mary initially has. She has 2 potted plants on each of the 40 window leads. So, the total number of potted plants is:\n\\[ 2 \\times 40 = 80 \\]\n\nNext, we need to determine how many potted plants she will give away. She will give 1 potted plant from each of the 40 window leads to friends and family. So, the number of potted plants given away is:\n\\[ 40 \\]\n\nNow, we subtract the number of potted plants given away from the total number of potted plants she initially has:\n\\[ 80 - 40 = 40 \\]\n\nTherefore, the number of potted plants Mary will remain with is:\n\\[ \\boxed{40} \\]",
+    "time_s": 16.78511095046997
+  },
+  {
+    "problem_id": "sym_99_inst37",
+    "type": "symbolic",
+    "original_id": 99,
+    "gold_answer": "189",
+    "predicted_answer": "489",
+    "correct": false,
+    "solution": "To determine how many potted plants Aisha will remain with, we need to follow these steps:\n\n1. **Initial Number of Plants:**\n   Aisha already has 9 potted plants on each of the 51 window leads. Therefore, the total number of plants she already has is:\n   \\[\n   9 \\times 51 = 459\n   \\]\n\n2. **New Plants Received:**\n   Two days ago, Aisha received 36 new potted plants from her favorite plant symmetry. Adding these to her initial number of plants, we get:\n   \\[\n   459 + 36 = 495\n   \\]\n\n3. ** plants Given Away:**\n   Aisha plans to give away 6 potted plants to friends and family each day. She will be giving away plants for one day (tomorrow). Therefore, the number of plants she will give away is:\n   \\[\n   6\n   \\]\n\n4. **Remaining Plants:**\n   To find out how many plants Aisha will have left after giving away 6 plants, we subtract the number of plants given away from the total number of plants she has:\n   \\[\n   495 - 6 = 489\n   \\]\n\nThus, the number of potted plants Aisha will remain with is:\n\\[\n\\boxed{489}\n\\]",
+    "time_s": 19.76413369178772
+  },
+  {
+    "problem_id": "sym_99_inst17",
+    "type": "symbolic",
+    "original_id": 99,
+    "gold_answer": "24",
+    "predicted_answer": "437",
+    "correct": false,
+    "solution": "To determine how many potted plants Nia will have left after giving some to her friends and family, we need to follow these steps:\n\n1. Calculate the total number of potted plants Nia currently has.\n2. Determine how many potted plants she will give away.\n3. Subtract the number of potted plants given away from the total number of potted plants she currently has.\n\nFirst, let's calculate the total number of potted plants Nia currently has. She has 7 potted plants on each of the 60 window leads, plus 24 new potted plants from her favorite plant\ufffd. So, the total number of potted plants is:\n\\[ 7 \\times 60 + 24 = 420 + 24 = 444 \\]\n\nNext, we need to determine how many potted plants Nia will give away. She has decided to give 7 potted plants to each of her friends and family. Since the problem does not specify how many friends and family members she has, we assume she is giving plants to each of her friends and family once, which means she will give away 7 potted plants.\n\nNow, we subtract the number of potted plants given away from the total number of potted plants she currently has:\n\\[ 444 - 7 = 437 \\]\n\nTherefore, the number of potted plants Nia will have left is:\n\\[ \\boxed",
+    "time_s": 20.06717276573181
+  },
+  {
+    "problem_id": "orig_1053",
+    "type": "original",
+    "original_id": 1053,
+    "gold_answer": "55",
+    "predicted_answer": "55",
+    "correct": true,
+    "solution": "To determine how much Alison spent on her athletic gear, we need to calculate the cost of each item and then sum them up. Let's break it down step by step.\n\n1. **Cost of the tank top:**\n   The tank top costs $10.\n\n2. **Cost of the running shorts:**\n   The running shorts cost $5 more than the tank top. Therefore, the cost of the running shorts is:\n   \\[\n   10 + 5 = 15 \\text{ dollars}\n   \\]\n\n3. **Cost of the tennis shoes:**\n   The original price of the tennis shoes is $48, but they are on sale for half price. Therefore, the cost of the tennis shoes is:\n   \\[\n   \\frac{48}{2} = 24 \\text{ dollars}\n   \\]\n\n4. **Cost of the package of socks:**\n   Alison bought a package of socks that originally cost $8, but she had a coupon for $2 off. Therefore, the cost of the socks is:\n   \\[\n   8 - 2 = 6 \\text{ dollars}\n   \\]\n\nNow, we sum up the costs of all the items:\n\\[\n10 + 15 + 24 + 6 = 55 \\text{ dollars}\n\\]\n\nThus, the total amount Alison spent on her athletic gear is:\n\\[\n\\boxed{55}\n",
+    "time_s": 20.37577795982361
+  },
+  {
+    "problem_id": "sym_1053_inst0",
+    "type": "symbolic",
+    "original_id": 1053,
+    "gold_answer": "56",
+    "predicted_answer": "56",
+    "correct": true,
+    "solution": "To determine how much Nadia spent on her athletic gear, we need to calculate the cost of each item and then sum them up. Let's break it down step by step.\n\n1. **Cost of the jersey:**\n   The jersey costs $21.\n\n2. **Cost of the swimming legs:**\n   The swimming legs cost $4 more than the jersey. Therefore, the cost of the swimming legs is:\n   \\[\n   21 + 4 = 25\n   \\]\n\n3. **Cost of the cleats:**\n   The original price of the cleats is $32, but they are on sale for one-eighth of the original price. Therefore, the sale price of the cleats is:\n   \\[\n   \\frac{32}{8} = 4\n   \\]\n\n4. **Cost of the head bands:**\n   The head bands cost $9, and she has a coupon for $3 off the package. Therefore, the cost of the head bands after applying the coupon is:\n   \\[\n   9 - 3 = 6\n   \\]\n\n5. **Total cost:**\n   Now, we sum up the costs of all the items:\n   \\[\n   21 + 25 + 4 + 6 = 56\n   \\]\n\nTherefore, the total amount Nadia spent on her athletic gear is \\(\\boxed{56}\\).",
+    "time_s": 19.690313816070557
+  },
+  {
+    "problem_id": "sym_1053_inst48",
+    "type": "symbolic",
+    "original_id": 1053,
+    "gold_answer": "70",
+    "predicted_answer": "24",
+    "correct": false,
+    "solution": "To determine how much Rania spent on her athletic gear, we need to calculate the cost of each item and then sum them up, taking into account any discounts or coupons.\n\n1. **Cost of the sports algebra:**\n   The sports algebra costs \u20a315.\n\n2. **Cost of the basketball split:**\n   The basketball split costs \u20a39 more than the sports algebra. Therefore, the cost of the basketball split is:\n   \\[\n   15 + 9 = 24\n   \\]\n\n3. **Cost of the basketball shoes:**\n   The basketball shoes were originally \u20a350, but they were on sale for \\(\\frac{3}{5}\\) of the original price. Therefore, the sale price of the basketball shoes is:\n   \\[\n   50 \\times \\frac{3}{5} = 30\n   \\]\n\n4. **Cost of the basketball wigs:**\n   Rania bought a package of basketball wigs that originally cost \u20a350, but she had a coupon for a discount of \u20a34. Therefore, the cost of the basketball wigs after the discount is:\n   \\[\n   50 - 4 = 46\n   \\]\n\n5. **Total cost:**\n   To find the total amount Rania spent, we sum the costs of all the items:\n   \\[\n   15 + 24 +",
+    "time_s": 19.927846431732178
+  },
+  {
+    "problem_id": "orig_300",
+    "type": "original",
+    "original_id": 300,
+    "gold_answer": "78",
+    "predicted_answer": "78",
+    "correct": true,
+    "solution": "To determine how many minutes Peter needs to exercise on Tuesday to reach his goal, we need to follow these steps:\n\n1. Calculate the total amount of time Peter exercised on Monday and Sunday combined.\n2. Determine how much time Peter wants to exercise on Tuesday, which is twice the amount of time he exercised on Monday and Sunday combined.\n3. Subtract the time he exercised on Sunday from the total time he wants to exercise on Tuesday to find out how much time he needs to exercise on Monday.\n\nLet's start with the first step:\n\nPeter exercised for 16 minutes on Monday and 23 minutes on Sunday. So, the total time he exercised on Monday and Sunday combined is:\n\\[ 16 + 23 = 39 \\text{ minutes} \\]\n\nNext, Peter wants to exercise for twice the amount of time he exercised on Monday and Sunday combined. Therefore, the total time he wants to exercise on Tuesday is:\n\\[ 2 \\times 39 = 78 \\text{ minutes} \\]\n\nSince we are asked how many minutes he needs to exercise on Tuesday to reach his goal, and we already know he will exercise for 78 minutes on Tuesday, the answer is:\n\\[ \\boxed{78} \\]",
+    "time_s": 17.021717309951782
+  },
+  {
+    "problem_id": "sym_300_inst10",
+    "type": "symbolic",
+    "original_id": 300,
+    "gold_answer": "56",
+    "predicted_answer": "56",
+    "correct": true,
+    "solution": "To determine how many minutes Luis needs to exercise on Friday, we first need to calculate the total amount of time he exercised on Wednesday and Thursday. According to the problem, on Wednesday he exercised for 13 minutes and on Thursday he exercised for 15 minutes. Therefore, the total time he exercised on Wednesday and Thursday combined is:\n\n\\[ 13 + 15 = 28 \\text{ minutes} \\]\n\nLuis wants to exercise for twice this amount of time on Friday. So, we need to calculate twice the total time he exercised on Wednesday and Thursday:\n\n\\[ 2 \\times 28 = 56 \\text{ minutes} \\]\n\nTherefore, the number of minutes Luis needs to exercise on Friday to reach his goal is:\n\n\\[\n\\boxed{56}\n\\]",
+    "time_s": 11.275185585021973
+  },
+  {
+    "problem_id": "sym_300_inst44",
+    "type": "symbolic",
+    "original_id": 300,
+    "gold_answer": "88",
+    "predicted_answer": "88",
+    "correct": true,
+    "solution": "To determine how many minutes Emma needs to exercise on Monday, we first need to calculate the total amount of time he exercised on Sunday and Saturday combined.\n\nOn Sunday, Emma exercised for 25 minutes.\nOn Saturday, Emma exercised for 19 minutes.\n\nThe total time exercised on Sunday and Saturday combined is:\n\\[ 25 + 19 = 44 \\text{ minutes} \\]\n\nAccording to the problem, on Monday, Emma wants to exercise for twice the amount of time he did on Sunday and Saturday combined. Therefore, the time he needs to exercise on Monday is:\n\\[ 2 \\times 44 = 88 \\text{ minutes} \\]\n\nThus, the number of minutes Emma has to exercise on Monday to reach his goal is:\n\\[ \\boxed{88} \\]",
+    "time_s": 10.967092990875244
+  },
+  {
+    "problem_id": "orig_737",
+    "type": "original",
+    "original_id": 737,
+    "gold_answer": "2",
+    "predicted_answer": "32",
+    "correct": false,
+    "solution": "To determine how many ounces of water Peter has left after making the ice cubes, we need to calculate the total amount of water used and subtract it from the initial amount of water.\n\nFirst, let's calculate the amount of water used for the giant cubes:\n- Each giant cube uses 4 ounces of water.\n- Peter makes 3 giant cubes.\n\\[\n3 \\text{ cubes} \\times 4 \\text{ ounces per cube} = 12 \\text{ ounces}\n\\]\n\nNext, let's calculate the amount of water used for the medium cubes:\n- Each medium cube uses 2 ounces of water.\n- Peter makes 7 medium cubes.\n\\[\n7 \\text{ cubes} \\times 2 \\text{ ounces per cube} = 14 \\text{ ounces}\n\\]\n\nThen, let's calculate the amount of water used for the small cubes:\n- Each small cube uses 0.5 ounces of water.\n- Peter makes 8 small cubes.\n\\[\n8 \\text{ cubes} \\times 0.5 \\text{ ounces per cube} = 4 \\text{ ounces}\n\\]\n\nNow, let's find the total amount of water used by adding the water used for all the cubes:\n\\[\n12 \\text{ ounces} + 14 \\text{ ounces} + 4 \\text{ ounces} = 30 \\text{ ounces}\n\\]\n\nPeter initially had 32 ounces of water. To",
+    "time_s": 19.927672624588013
+  },
+  {
+    "problem_id": "sym_737_inst27",
+    "type": "symbolic",
+    "original_id": 737,
+    "gold_answer": "62",
+    "predicted_answer": "330",
+    "correct": false,
+    "solution": "To determine how many ounces of water slant has left after making the cubes, we need to calculate the total amount of water used and subtract it from the initial amount of water.\n\nFirst, let's calculate the total amount of water used for each type of cube:\n\n1. **Giant cubes:**\n   - Each giant cube uses 12 ounces.\n   - slant makes 8 giant cubes.\n   - Total water used for giant cubes: \\( 8 \\times 12 = 96 \\) ounces.\n\n2. **Small cubes:**\n   - Each small cube uses \\( \\frac{1}{2} \\) ounce.\n   - slant makes 15 small cubes.\n   - Total water used for small cubes: \\( 15 \\times \\frac{1}{2} = 7.5 \\) ounces.\n\n3. **Medium cubes:**\n   - Each medium cube uses 11 ounces.\n   - slant makes 14 medium cubes.\n   - Total water used for medium cubes: \\( 14 \\times 11 = 154 \\) ounces.\n\nNext, we sum the total water used for all the cubes:\n\\[\n96 + 7.5 + 154 = 257.5 \\text{ ounces}\n\\]\n\n slant started with 330 ounces of water. To find out how many ounces of water he has left, we subtract the total water",
+    "time_s": 20.26267123222351
+  },
+  {
+    "problem_id": "sym_737_inst21",
+    "type": "symbolic",
+    "original_id": 737,
+    "gold_answer": "72",
+    "predicted_answer": "7",
+    "correct": false,
+    "solution": "To determine how many grams of water Luis has left after making the ice cubes, we need to calculate the total amount of water used and subtract it from the initial amount of water.\n\nFirst, let's calculate the amount of water used for each type of ice cube:\n\n1. **Giant cubes:**\n   - Each giant cube uses 12 grams of water.\n   - Luis makes 8 giant cubes.\n   \\[\n   \\text{Water used for giant cubes} = 8 \\times 12 = 96 \\text{ grams}\n   \\]\n\n2. **Small cubes:**\n   - Each small cube uses \\(\\frac{2}{4}\\) grams of water, which simplifies to \\(\\frac{1}{2}\\) gram.\n   - Luis makes 15 small cubes.\n   \\[\n   \\text{Water used for small cubes} = 15 \\times \\frac{1}{2} = 7.5 \\text{ grams}\n   \\]\n\n3. **Medium cubes:**\n   - Each medium cube uses 11 grams of water.\n   - Luis makes 15 medium cubes.\n   \\[\n   \\text{Water used for medium cubes} = 15 \\times 11 = 165 \\text{ grams}\n   \\]\n\nNext, we sum the water used for all the ice cubes:\n\\[\n\\text{Total water used} = 96 + 7",
+    "time_s": 19.800445556640625
+  },
+  {
+    "problem_id": "orig_1111",
+    "type": "original",
+    "original_id": 1111,
+    "gold_answer": "157",
+    "predicted_answer": "157",
+    "correct": true,
+    "solution": "To determine the total revenue the store will receive after selling all the balls, we need to calculate the revenue from each type of ball separately and then sum these amounts.\n\n1. **Calculate the revenue from the red balls:**\n   - Number of red balls: 3\n   - Cost per red ball: $9\n   - Total revenue from red balls: \\(3 \\times 9 = 27\\) dollars\n\n2. **Calculate the revenue from the blue balls:**\n   - Number of blue balls: 11\n   - Cost per blue ball: $5\n   - Total revenue from blue balls: \\(11 \\times 5 = 55\\) dollars\n\n3. **Calculate the revenue from the green balls:**\n   - Number of green balls: 25\n   - Cost per green ball: $3\n   - Total revenue from green balls: \\(25 \\times 3 = 75\\) dollars\n\n4. **Sum the revenues from all the balls:**\n   - Total revenue: \\(27 + 55 + 75 = 157\\) dollars\n\nTherefore, the store will have received \\(\\boxed{157}\\) dollars after all the balls are sold.",
+    "time_s": 16.930683851242065
+  },
+  {
+    "problem_id": "sym_1111_inst17",
+    "type": "symbolic",
+    "original_id": 1111,
+    "gold_answer": "185",
+    "predicted_answer": "185",
+    "correct": true,
+    "solution": "To determine the total revenue from selling all the balls, we need to calculate the revenue from each color of ball separately and then sum these amounts.\n\n1. **Calculate the revenue from the purple balls:**\n   - Number of purple balls: 9\n   - Cost per purple ball: \u20ba8\n   - Total revenue from purple balls: \\( 9 \\times 8 = 72 \\) \u20ba\n\n2. **Calculate the revenue from the pink balls:**\n   - Number of pink balls: 11\n   - Cost per pink ball: \u20ba3\n   - Total revenue from pink balls: \\( 11 \\times 3 = 33 \\) \u20ba\n\n3. **Calculate the revenue from the blue balls:**\n   - Number of blue balls: 16\n   - Cost per blue ball: \u20ba5\n   - Total revenue from blue balls: \\( 16 \\times 5 = 80 \\) \u20ba\n\n4. **Sum the revenues from all the balls:**\n   - Total revenue: \\( 72 + 33 + 80 = 185 \\) \u20ba\n\nTherefore, the total revenue the market will have received after all the balls are sold is \\(\\boxed{185}\\).",
+    "time_s": 18.329915523529053
+  },
+  {
+    "problem_id": "sym_1111_inst9",
+    "type": "symbolic",
+    "original_id": 1111,
+    "gold_answer": "294",
+    "predicted_answer": "294",
+    "correct": true,
+    "solution": "To determine the total amount the market will have received after selling all the balls, we need to calculate the revenue from each color of ball separately and then sum these amounts.\n\n1. **Calculate the revenue from the purple balls:**\n   - Number of purple balls: 11\n   - Cost per purple ball: \u00a57\n   - Total revenue from purple balls: \\( 11 \\times 7 = 77 \\) \u00a5\n\n2. **Calculate the revenue from the pink balls:**\n   - Number of pink balls: 14\n   - Cost per pink ball: \u00a58\n   - Total revenue from pink balls: \\( 14 \\times 8 = 112 \\) \u00a5\n\n3. **Calculate the revenue from the green balls:**\n   - Number of green balls: 21\n   - Cost per green ball: \u00a55\n   - Total revenue from green balls: \\( 21 \\times 5 = 105 \\) \u00a5\n\n4. **Sum the revenues from all the balls:**\n   - Total revenue: \\( 77 + 112 + 105 = 294 \\) \u00a5\n\nTherefore, the total amount the market will have received after all the balls are sold is \\(\\boxed{294}\\) \u00a5.",
+    "time_s": 18.60629677772522
+  },
+  {
+    "problem_id": "orig_1189",
+    "type": "original",
+    "original_id": 1189,
+    "gold_answer": "6",
+    "predicted_answer": "6",
+    "correct": true,
+    "solution": "To determine the total number of apple slices eaten by Doxa, her sister, and her brother, we will follow these steps:\n\n1. **Determine the number of slices Doxa ate:**\n   Doxa ate 1 slice.\n\n2. **Determine the number of slices Doxa's sister ate:**\n   Doxa's sister ate 1 more slice than Doxa. Since Doxa ate 1 slice, her sister ate:\n   \\[\n   1 + 1 = 2 \\text{ slices}\n   \\]\n\n3. **Determine the number of slices Doxa's brother ate:**\n   Doxa's brother ate 1 more slice than her sister. Since her sister ate 2 slices, her brother ate:\n   \\[\n   2 + 1 = 3 \\text{ slices}\n   \\]\n\n4. **Calculate the total number of slices eaten by all three:**\n   Add the slices eaten by Doxa, her sister, and her brother:\n   \\[\n   1 + 2 + 3 = 6 \\text{ slices}\n   \\]\n\nThus, the total number of slices of apple eaten by Doxa, her sister, and her brother is \\(\\boxed{6}\\).",
+    "time_s": 17.694381713867188
+  },
+  {
+    "problem_id": "sym_1189_inst13",
+    "type": "symbolic",
+    "original_id": 1189,
+    "gold_answer": "28",
+    "predicted_answer": "28",
+    "correct": true,
+    "solution": "To determine the total number of mango slices eaten by Nata, her cousin, and her sister, we need to follow these steps:\n\n1. Identify the number of slices Nata ate.\n2. Determine the number of slices her cousin ate.\n3. Determine the number of slices her sister ate.\n4. Sum the slices eaten by Nata, her cousin, and her sister.\n\nFirst, we know that Nata ate 3 slices of mango. So, the number of slices Nata ate is:\n\\[ 3 \\]\n\nNext, we need to find out how many slices her cousin ate. Her cousin ate 5 more slices than Nata. Therefore, the number of slices her cousin ate is:\n\\[ 3 + 5 = 8 \\]\n\nThen, we need to find out how many slices her sister ate. Her sister ate 9 more slices than her cousin. Therefore, the number of slices her sister ate is:\n\\[ 8 + 9 = 17 \\]\n\nNow, we sum the slices eaten by Nata, her cousin, and her sister:\n\\[ 3 + 8 + 17 = 28 \\]\n\nThus, the total number of mango slices eaten by Nata, her cousin, and her sister is:\n\\[ \\boxed{28} \\]",
+    "time_s": 17.70192551612854
+  },
+  {
+    "problem_id": "sym_1189_inst48",
+    "type": "symbolic",
+    "original_id": 1189,
+    "gold_answer": "25",
+    "predicted_answer": "25",
+    "correct": true,
+    "solution": "To determine the total number of mango slices eaten by Nitya, her cousin, and her brother, we will follow these steps:\n\n1. **Determine the number of slices Nitya ate:**\n   Nitya ate 3 slices.\n\n2. **Determine the number of slices her cousin ate:**\n   Her cousin ate 6 more slices than Nitya.\n   \\[\n   \\text{Cousin's slices} = 3 + 6 = 9\n   \\]\n\n3. **Determine the number of slices her brother ate:**\n   Her brother ate 4 more slices than her cousin.\n   \\[\n   \\text{Brother's slices} = 9 + 4 = 13\n   \\]\n\n4. **Calculate the total number of slices eaten by all three:**\n   \\[\n   \\text{Total slices} = \\text{Nitya's slices} + \\text{Cousin's slices} + \\text{Brother's slices}\n   \\]\n   \\[\n   \\text{Total slices} = 3 + 9 + 13 = 25\n   \\]\n\nThus, the total number of mango slices eaten by Nitya, her cousin, and her brother is \\(\\boxed{25}\\).",
+    "time_s": 18.130650281906128
+  },
+  {
+    "problem_id": "orig_1264",
+    "type": "original",
+    "original_id": 1264,
+    "gold_answer": "210",
+    "predicted_answer": "3",
+    "correct": false,
+    "solution": "To determine the total number of pieces of popcorn that are popped, we need to break down the problem into smaller time intervals and calculate the number of kernels popped in each interval.\n\n1. **First 30 seconds:**\n   The number of kernels popped is \\(20\\).\n\n2. **Next 30 seconds:**\n   The number of kernels popped is \\(3 \\times 20 = 60\\).\n\n3. **Next 30 seconds:**\n   The number of kernels popped is \\(4 \\times 20 = 80\\).\n\n4. **Final 30 seconds:**\n   The number of kernels popped is \\(\\frac{1}{2} \\times 20 = 10\\).\n\nNow, we sum up the number of kernels popped in each interval:\n\\[20 + 60 + 80 + 10 = 170.\\]\n\nAfter pool is off, a quarter of the number of kernels that were popped in the final 30 seconds also pop from the residual heat. The number of kernels that pop in the final 30 seconds is 10, so a quarter of this is:\n\\[\\frac{10}{4} = 2.5.\\]\nSince the number of kernels must be a whole number, we assume that the problem implies rounding to the nearest whole number, which is 3 (if we are to assume the problem is practical and we round",
+    "time_s": 20.277347326278687
+  },
+  {
+    "problem_id": "sym_1264_inst21",
+    "type": "symbolic",
+    "original_id": 1264,
+    "gold_answer": "190",
+    "predicted_answer": "40",
+    "correct": false,
+    "solution": "Let's break down the problem step by step to determine how many pieces of popcorn Oliver has to eat.\n\n1. **Initial pop rate**: The pop rate is 20 kernels per 24 seconds.\n2. **First 24 seconds**: The pop rate is 20 kernels per 24 seconds.\n3. **Next 24 seconds**: The pop rate is \\(2 \\times 20 = 40\\) kernels per 24 seconds.\n4. **Next 24 seconds**: The pop rate is \\(4 \\times 20 = 80\\) kernels per 24 seconds.\n5. **Final 24 seconds**: The pop rate is \\(\\frac{80}{2} = 40\\) kernels per 24 seconds.\n\nNow, let's calculate the total number of kernels populating in each 24-second interval:\n- In the first 24 seconds, the pop rate is 20 kernels per 24 seconds, so the total is \\(20\\) kernels.\n- In the next 24 seconds, the pop rate is 40 kernels per 24 seconds, so the total is \\(40\\) kernels.\n- In the next 24 seconds, the pop rate is 80 kernels per 24 seconds, so the total is \\(80\\) kernels.\n- In the final 24 seconds, the pop rate is 40 kernels per",
+    "time_s": 20.542412996292114
+  },
+  {
+    "problem_id": "sym_1264_inst6",
+    "type": "symbolic",
+    "original_id": 1264,
+    "gold_answer": "525",
+    "predicted_answer": "6",
+    "correct": false,
+    "solution": "To determine the total number of pieces of popcorn that distinct from the final 14 seconds of cooking, we need to break down the problem step by step.\n\n1. **Initial Pops:**\n   - In the first 14 seconds, 40 pieces of popcorn pop.\n\n2. **Second 14 seconds:**\n   - In the next 14 seconds, the number of pieces of popcorn that pop is 4 times the initial amount.\n   \\[\n   4 \\times 40 = 160\n   \\]\n\n3. **Third 14 seconds:**\n   - In the next 14 seconds, the number of pieces of popcorn that pop is 5 times the initial amount.\n   \\[\n   5 \\times 40 = 200\n   \\]\n\n4. **Fourth 14 seconds:**\n   - In the final 14 seconds, the number of pieces of popcorn that pop is half the rate of the previous 14 seconds.\n   \\[\n   \\frac{200}{2} = 100\n   \\]\n\n5. **Total Pops:**\n   - Sum the number of pieces of popcorn that pop in each 14-second interval.\n   \\[\n   40 + 160 + 200 + 100 = 500\n   \\]\n\n6. **Final Calculation:**\n   - A",
+    "time_s": 20.49384903907776
+  }
+]

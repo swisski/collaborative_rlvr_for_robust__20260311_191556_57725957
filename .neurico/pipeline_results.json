@@ -1,0 +1,27 @@
+{
+  "success": true,
+  "stages": {
+    "resource_finder": {
+      "success": true,
+      "completion_marker": "/workspaces/collaborative_rlvr_for_robust__20260311_191556_57725957/.resource_finder_complete",
+      "outputs": {
+        "literature_review": "/workspaces/collaborative_rlvr_for_robust__20260311_191556_57725957/literature_review.md",
+        "resources_catalog": "/workspaces/collaborative_rlvr_for_robust__20260311_191556_57725957/resources.md",
+        "papers_dir": "/workspaces/collaborative_rlvr_for_robust__20260311_191556_57725957/papers",
+        "datasets_dir": "/workspaces/collaborative_rlvr_for_robust__20260311_191556_57725957/datasets",
+        "code_dir": "/workspaces/collaborative_rlvr_for_robust__20260311_191556_57725957/code"
+      },
+      "log_file": "/workspaces/collaborative_rlvr_for_robust__20260311_191556_57725957/logs/resource_finder_claude.log",
+      "transcript_file": "/workspaces/collaborative_rlvr_for_robust__20260311_191556_57725957/logs/resource_finder_claude_transcript.jsonl",
+      "elapsed_time": 1994.458740234375
+    },
+    "experiment_runner": {
+      "success": true,
+      "return_code": 0,
+      "elapsed_time": 10170.604992389679,
+      "log_file": "/workspaces/collaborative_rlvr_for_robust__20260311_191556_57725957/logs/execution_claude.log",
+      "transcript_file": "/workspaces/collaborative_rlvr_for_robust__20260311_191556_57725957/logs/execution_claude_transcript.jsonl"
+    }
+  },
+  "work_dir": "/workspaces/collaborative_rlvr_for_robust__20260311_191556_57725957"
+}

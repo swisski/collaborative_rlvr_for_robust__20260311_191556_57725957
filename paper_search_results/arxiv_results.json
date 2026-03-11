@@ -1,0 +1,884 @@
+[
+  {
+    "arxiv_id": "2505.24760v2",
+    "title": "REASONING GYM: Reasoning Environments for Reinforcement Learning with Verifiable Rewards",
+    "authors": [
+      "Zafir Stojanovski",
+      "Oliver Stanley",
+      "Joe Sharratt",
+      "Richard Jones",
+      "Abdulhakeem Adefioye"
+    ],
+    "year": "2025",
+    "abstract": "We introduce Reasoning Gym (RG), a library of reasoning environments for reinforcement learning with verifiable rewards. It provides over 100 data generators and verifiers spanning multiple domains including algebra, arithmetic, computation, cognition, geometry, graph theory, logic, and various common games. Its key innovation is the ability to generate virtually infinite training data with adjustable complexity, unlike most previous reasoning datasets, which are typically fixed. This procedural",
+    "url": "https://arxiv.org/abs/2505.24760v2"
+  },
+  {
+    "arxiv_id": "2506.08989v1",
+    "title": "SwS: Self-aware Weakness-driven Problem Synthesis in Reinforcement Learning for LLM Reasoning",
+    "authors": [
+      "Xiao Liang",
+      "Zhong-Zhi Li",
+      "Yeyun Gong",
+      "Yang Wang",
+      "Hengyuan Zhang"
+    ],
+    "year": "2025",
+    "abstract": "Reinforcement Learning with Verifiable Rewards (RLVR) has proven effective for training large language models (LLMs) on complex reasoning tasks, such as mathematical problem solving. A prerequisite for the scalability of RLVR is a high-quality problem set with precise and verifiable answers. However, the scarcity of well-crafted human-labeled math problems and limited-verification answers in existing distillation-oriented synthetic datasets limit their effectiveness in RL. Additionally, most pro",
+    "url": "https://arxiv.org/abs/2506.08989v1"
+  },
+  {
+    "arxiv_id": "2601.18533v1",
+    "title": "From Verifiable Dot to Reward Chain: Harnessing Verifiable Reference-based Rewards for Reinforcement Learning of Open-ended Generation",
+    "authors": [
+      "Yuxin Jiang",
+      "Yufei Wang",
+      "Qiyuan Zhang",
+      "Xingshan Zeng",
+      "Liangyou Li"
+    ],
+    "year": "2026",
+    "abstract": "Reinforcement learning with verifiable rewards (RLVR) succeeds in reasoning tasks (e.g., math and code) by checking the final verifiable answer (i.e., a verifiable dot signal). However, extending this paradigm to open-ended generation is challenging because there is no unambiguous ground truth. Relying on single-dot supervision often leads to inefficiency and reward hacking. To address these issues, we propose reinforcement learning with verifiable reference-based rewards (RLVRR). Instead of che",
+    "url": "https://arxiv.org/abs/2601.18533v1"
+  },
+  {
+    "arxiv_id": "2507.22844v1",
+    "title": "RLVMR: Reinforcement Learning with Verifiable Meta-Reasoning Rewards for Robust Long-Horizon Agents",
+    "authors": [
+      "Zijing Zhang",
+      "Ziyang Chen",
+      "Mingxiao Li",
+      "Zhaopeng Tu",
+      "Xiaolong Li"
+    ],
+    "year": "2025",
+    "abstract": "The development of autonomous agents for complex, long-horizon tasks is a central goal in AI. However, dominant training paradigms face a critical limitation: reinforcement learning (RL) methods that optimize solely for final task success often reinforce flawed or inefficient reasoning paths, a problem we term inefficient exploration. This leads to agents that are brittle and fail to generalize, as they learn to find solutions without learning how to reason coherently. To address this, we introd",
+    "url": "https://arxiv.org/abs/2507.22844v1"
+  },
+  {
+    "arxiv_id": "2506.14245v2",
+    "title": "Reinforcement Learning with Verifiable Rewards Implicitly Incentivizes Correct Reasoning in Base LLMs",
+    "authors": [
+      "Xumeng Wen",
+      "Zihan Liu",
+      "Shun Zheng",
+      "Shengyu Ye",
+      "Zhirong Wu"
+    ],
+    "year": "2025",
+    "abstract": "Recent advancements in long chain-of-thought (CoT) reasoning, particularly through the Group Relative Policy Optimization algorithm used by DeepSeek-R1, have led to significant interest in the potential of Reinforcement Learning with Verifiable Rewards (RLVR) for Large Language Models (LLMs). While RLVR promises to improve reasoning by allowing models to learn from free exploration, there remains debate over whether it truly enhances reasoning abilities or simply boosts sampling efficiency. This",
+    "url": "https://arxiv.org/abs/2506.14245v2"
+  },
+  {
+    "arxiv_id": "2508.10293v2",
+    "title": "Promoting Efficient Reasoning with Verifiable Stepwise Reward",
+    "authors": [
+      "Chuhuai Yue",
+      "Chengqi Dong",
+      "Yinan Gao",
+      "Hang He",
+      "Jiajun Chai"
+    ],
+    "year": "2025",
+    "abstract": "Large reasoning models (LRMs) have recently achieved significant progress in complex reasoning tasks, aided by reinforcement learning with verifiable rewards. However, LRMs often suffer from overthinking, expending excessive computation on simple problems and reducing efficiency. Existing efficient reasoning methods typically require accurate task assessment to preset token budgets or select reasoning modes, which limits their flexibility and reliability. In this work, we revisit the essence of ",
+    "url": "https://arxiv.org/abs/2508.10293v2"
+  },
+  {
+    "arxiv_id": "2601.17223v1",
+    "title": "Beyond Outcome Verification: Verifiable Process Reward Models for Structured Reasoning",
+    "authors": [
+      "Massimiliano Pronesti",
+      "Anya Belz",
+      "Yufang Hou"
+    ],
+    "year": "2026",
+    "abstract": "Recent work on reinforcement learning with verifiable rewards (RLVR) has shown that large language models (LLMs) can be substantially improved using outcome-level verification signals, such as unit tests for code or exact-match checks for mathematics. In parallel, process supervision has long been explored as a way to shape the intermediate reasoning behaviour of LLMs, but existing approaches rely on neural judges to score chain-of-thought steps, leaving them vulnerable to opacity, bias, and rew",
+    "url": "https://arxiv.org/abs/2601.17223v1"
+  },
+  {
+    "arxiv_id": "2510.00915v3",
+    "title": "Reinforcement Learning with Verifiable yet Noisy Rewards under Imperfect Verifiers",
+    "authors": [
+      "Xin-Qiang Cai",
+      "Wei Wang",
+      "Feng Liu",
+      "Tongliang Liu",
+      "Gang Niu"
+    ],
+    "year": "2025",
+    "abstract": "Reinforcement Learning with Verifiable Rewards (RLVR) replaces costly human labeling with automated verifiers. To reduce verifier hacking, many RLVR systems binarize rewards to $\\{0,1\\}$, but imperfect verifiers inevitably introduce \\emph{false negatives} (rejecting correct answers) and \\emph{false positives} (accepting incorrect ones). We formalize verifier unreliability as a stochastic reward channel with asymmetric noise rates $\u03c1_0$ and $\u03c1_1$ -- the FP rate and the FN rate, respectively. From",
+    "url": "https://arxiv.org/abs/2510.00915v3"
+  },
+  {
+    "arxiv_id": "2603.09117v1",
+    "title": "Decoupling Reasoning and Confidence: Resurrecting Calibration in Reinforcement Learning from Verifiable Rewards",
+    "authors": [
+      "Zhengzhao Ma",
+      "Xueru Wen",
+      "Boxi Cao",
+      "Yaojie Lu",
+      "Hongyu Lin"
+    ],
+    "year": "2026",
+    "abstract": "Reinforcement Learning from Verifiable Rewards (RLVR) significantly enhances large language models (LLMs) reasoning but severely suffers from calibration degeneration, where models become excessively over-confident in incorrect answers. Previous studies devote to directly incorporating calibration objective into existing optimization target. However, our theoretical analysis demonstrates that there exists a fundamental gradient conflict between the optimization for maximizing policy accuracy and",
+    "url": "https://arxiv.org/abs/2603.09117v1"
+  },
+  {
+    "arxiv_id": "2505.13445v1",
+    "title": "Trust, But Verify: A Self-Verification Approach to Reinforcement Learning with Verifiable Rewards",
+    "authors": [
+      "Xiaoyuan Liu",
+      "Tian Liang",
+      "Zhiwei He",
+      "Jiahao Xu",
+      "Wenxuan Wang"
+    ],
+    "year": "2025",
+    "abstract": "Large Language Models (LLMs) show great promise in complex reasoning, with Reinforcement Learning with Verifiable Rewards (RLVR) being a key enhancement strategy. However, a prevalent issue is ``superficial self-reflection'', where models fail to robustly verify their own outputs. We introduce RISE (Reinforcing Reasoning with Self-Verification), a novel online RL framework designed to tackle this. RISE explicitly and simultaneously trains an LLM to improve both its problem-solving and self-verif",
+    "url": "https://arxiv.org/abs/2505.13445v1"
+  },
+  {
+    "arxiv_id": "2507.17746v2",
+    "title": "Rubrics as Rewards: Reinforcement Learning Beyond Verifiable Domains",
+    "authors": [
+      "Anisha Gunjal",
+      "Anthony Wang",
+      "Elaine Lau",
+      "Vaskar Nath",
+      "Yunzhong He"
+    ],
+    "year": "2025",
+    "abstract": "Reinforcement Learning with Verifiable Rewards (RLVR) has proven effective for complex reasoning tasks with clear correctness signals such as math and coding. However, extending it to real-world reasoning tasks is challenging, as evaluation depends on nuanced, multi-criteria judgments rather than binary correctness. Instance-specific rubrics have recently been used in evaluation benchmarks to capture such judgments, but their potential as reward signals for on-policy post-training remains undere",
+    "url": "https://arxiv.org/abs/2507.17746v2"
+  },
+  {
+    "arxiv_id": "2601.03948v2",
+    "title": "Trade-R1: Bridging Verifiable Rewards to Stochastic Environments via Process-Level Reasoning Verification",
+    "authors": [
+      "Rui Sun",
+      "Yifan Sun",
+      "Sheng Xu",
+      "Li Zhao",
+      "Jing Li"
+    ],
+    "year": "2026",
+    "abstract": "Reinforcement Learning (RL) has enabled Large Language Models (LLMs) to achieve remarkable reasoning in domains like mathematics and coding, where verifiable rewards provide clear signals. However, extending this paradigm to financial decision is challenged by the market's stochastic nature: rewards are verifiable but inherently noisy, causing standard RL to degenerate into reward hacking. To address this, we propose Trade-R1, a model training framework that bridges verifiable rewards to stochas",
+    "url": "https://arxiv.org/abs/2601.03948v2"
+  },
+  {
+    "arxiv_id": "2603.04124v1",
+    "title": "BeamPERL: Parameter-Efficient RL with Verifiable Rewards Specializes Compact LLMs for Structured Beam Mechanics Reasoning",
+    "authors": [
+      "Tarjei Paule Hage",
+      "Markus J. Buehler"
+    ],
+    "year": "2026",
+    "abstract": "Can reinforcement learning with hard, verifiable rewards teach a compact language model to reason about physics, or does it primarily learn to pattern-match toward correct answers? We study this question by training a 1.5B-parameter reasoning model on beam statics, a classic engineering problem, using parameter-efficient RLVR with binary correctness rewards from symbolic solvers, without teacher-generated reasoning traces. The best BeamPERL checkpoint achieves a 66.7% improvement in Pass@1 over ",
+    "url": "https://arxiv.org/abs/2603.04124v1"
+  },
+  {
+    "arxiv_id": "2510.10973v1",
+    "title": "Chart-RVR: Reinforcement Learning with Verifiable Rewards for Explainable Chart Reasoning",
+    "authors": [
+      "Sanchit Sinha",
+      "Oana Frunza",
+      "Kashif Rasul",
+      "Yuriy Nevmyvaka",
+      "Aidong Zhang"
+    ],
+    "year": "2025",
+    "abstract": "The capabilities of Large Vision-Language Models (LVLMs) have reached state-of-the-art on many visual reasoning tasks, including chart reasoning, yet they still falter on out-of-distribution (OOD) data, and degrade further when asked to produce their chain-of-thought (CoT) rationales, limiting explainability. We present Chart-RVR, a general framework that fine-tunes LVLMs to be more robust and explainable for chart reasoning by coupling Group Relative Policy Optimization (GRPO) with automaticall",
+    "url": "https://arxiv.org/abs/2510.10973v1"
+  },
+  {
+    "arxiv_id": "2510.01857v2",
+    "title": "Learning Reasoning Reward Models from Expert Demonstration via Inverse Reinforcement Learning",
+    "authors": [
+      "Claudio Fanconi",
+      "Nicol\u00e1s Astorga",
+      "Mihaela van der Schaar"
+    ],
+    "year": "2025",
+    "abstract": "Reasoning in large language models is typically trained via supervised fine-tuning (SFT) on expert traces, often framed as knowledge distillation, or reinforcement learning (RL) with outcome-based verifiable rewards. However, SFT focuses on imitation rather than optimisation, while outcome-based RL requires a well-defined reward function. We propose an inverse reinforcement learning (IRL) framework that learns (partially) dense token-level reasoning reward models directly from expert demonstrati",
+    "url": "https://arxiv.org/abs/2510.01857v2"
+  },
+  {
+    "arxiv_id": "2510.27044v2",
+    "title": "Limits of Generalization in RLVR: Two Case Studies in Mathematical Reasoning",
+    "authors": [
+      "Md Tanvirul Alam",
+      "Nidhi Rastogi"
+    ],
+    "year": "2025",
+    "abstract": "Mathematical reasoning is a central challenge for large language models (LLMs), requiring not only correct answers but also faithful reasoning processes. Reinforcement Learning with Verifiable Rewards (RLVR) has emerged as a promising approach for enhancing such capabilities; however, its ability to foster genuine reasoning remains unclear. We investigate RLVR on two combinatorial problems with fully verifiable solutions: \\emph{Activity Scheduling} and the \\emph{Longest Increasing Subsequence}, ",
+    "url": "https://arxiv.org/abs/2510.27044v2"
+  },
+  {
+    "arxiv_id": "2507.15778v1",
+    "title": "Stabilizing Knowledge, Promoting Reasoning: Dual-Token Constraints for RLVR",
+    "authors": [
+      "Jiakang Wang",
+      "Runze Liu",
+      "Fuzheng Zhang",
+      "Xiu Li",
+      "Guorui Zhou"
+    ],
+    "year": "2025",
+    "abstract": "Reinforcement Learning with Verifiable Rewards (RLVR) has become an effective post-training method for improving the reasoning abilities of Large Language Models (LLMs), mainly by shaping higher-order behaviors such as reflection and planning. However, previous RLVR algorithms often apply uniform training signals to all tokens, without considering the different roles of low-entropy knowledge-related tokens and high-entropy reasoning-related tokens. Some recent methods try to separate these token",
+    "url": "https://arxiv.org/abs/2507.15778v1"
+  },
+  {
+    "arxiv_id": "2502.19655v1",
+    "title": "Med-RLVR: Emerging Medical Reasoning from a 3B base model via reinforcement Learning",
+    "authors": [
+      "Sheng Zhang",
+      "Qianchu Liu",
+      "Guanghui Qin",
+      "Tristan Naumann",
+      "Hoifung Poon"
+    ],
+    "year": "2025",
+    "abstract": "Reinforcement learning from verifiable rewards (RLVR) has recently gained attention for its ability to elicit self-evolved reasoning capabilitie from base language models without explicit reasoning supervisions, as demonstrated by DeepSeek-R1. While prior work on RLVR has primarily focused on mathematical and coding domains, its applicability to other tasks and domains remains unexplored. In this work, we investigate whether medical reasoning can emerge from RLVR. We introduce Med-RLVR as an ini",
+    "url": "https://arxiv.org/abs/2502.19655v1"
+  },
+  {
+    "arxiv_id": "2504.20571v3",
+    "title": "Reinforcement Learning for Reasoning in Large Language Models with One Training Example",
+    "authors": [
+      "Yiping Wang",
+      "Qing Yang",
+      "Zhiyuan Zeng",
+      "Liliang Ren",
+      "Liyuan Liu"
+    ],
+    "year": "2025",
+    "abstract": "We show that reinforcement learning with verifiable reward using one training example (1-shot RLVR) is effective in incentivizing the math reasoning capabilities of large language models (LLMs). Applying RLVR to the base model Qwen2.5-Math-1.5B, we identify a single example that elevates model performance on MATH500 from 36.0% to 73.6% (8.6% improvement beyond format correction), and improves the average performance across six common mathematical reasoning benchmarks from 17.6% to 35.7% (7.0% no",
+    "url": "https://arxiv.org/abs/2504.20571v3"
+  },
+  {
+    "arxiv_id": "2510.10649v1",
+    "title": "Unlocking Exploration in RLVR: Uncertainty-aware Advantage Shaping for Deeper Reasoning",
+    "authors": [
+      "Can Xie",
+      "Ruotong Pan",
+      "Xiangyu Wu",
+      "Yunfei Zhang",
+      "Jiayi Fu"
+    ],
+    "year": "2025",
+    "abstract": "Reinforcement Learning with Verifiable Rewards (RLVR) has shown significant promise for enhancing the reasoning capabilities of large language models (LLMs). However, prevailing algorithms like GRPO broadcast a uniform advantage signal across all tokens in a sequence. This coarse-grained approach overlooks the pivotal role of uncertain, high-stakes decisions during reasoning, leading to inefficient exploration and the well-documented problem of entropy collapse. To address this, we introduce UnC",
+    "url": "https://arxiv.org/abs/2510.10649v1"
+  },
+  {
+    "arxiv_id": "2510.04617v2",
+    "title": "Making Mathematical Reasoning Adaptive",
+    "authors": [
+      "Zhejian Lai",
+      "Xiang Geng",
+      "Zhijun Wang",
+      "Yang Bai",
+      "Jiahuan Li"
+    ],
+    "year": "2025",
+    "abstract": "Mathematical reasoning is a primary indicator of large language models (LLMs) intelligence. However, existing LLMs exhibit failures of robustness and generalization. This paper attributes these deficiencies to spurious reasoning, i.e., producing answers from superficial features. To address this challenge, we propose the AdaR framework to enable adaptive reasoning, wherein models rely on problem-solving logic to produce answers. AdaR synthesizes logically equivalent queries by varying variable v",
+    "url": "https://arxiv.org/abs/2510.04617v2"
+  },
+  {
+    "arxiv_id": "2601.22975v2",
+    "title": "Golden Goose: A Simple Trick to Synthesize Unlimited RLVR Tasks from Unverifiable Internet Text",
+    "authors": [
+      "Ximing Lu",
+      "David Acuna",
+      "Jaehun Jung",
+      "Jian Hu",
+      "Di Zhang"
+    ],
+    "year": "2026",
+    "abstract": "Reinforcement Learning with Verifiable Rewards (RLVR) has become a cornerstone for unlocking complex reasoning in Large Language Models (LLMs). Yet, scaling up RL is bottlenecked by limited existing verifiable data, where improvements increasingly saturate over prolonged training. To overcome this, we propose Golden Goose, a simple trick to synthesize unlimited RLVR tasks from unverifiable internet text by constructing a multiple-choice question-answering version of the fill-in-the-middle task. ",
+    "url": "https://arxiv.org/abs/2601.22975v2"
+  },
+  {
+    "arxiv_id": "2512.23165v2",
+    "title": "Evaluating Parameter Efficient Methods for RLVR",
+    "authors": [
+      "Qingyu Yin",
+      "Yulun Wu",
+      "Zhennan Shen",
+      "Sunbowen Li",
+      "Zhilin Wang"
+    ],
+    "year": "2025",
+    "abstract": "We systematically evaluate Parameter-Efficient Fine-Tuning (PEFT) methods under the paradigm of Reinforcement Learning with Verifiable Rewards (RLVR). RLVR incentivizes language models to enhance their reasoning capabilities through verifiable feedback; however, while methods like LoRA are commonly used, the optimal PEFT architecture for RLVR remains unidentified. In this work, we conduct the first comprehensive evaluation of over 12 PEFT methodologies across the DeepSeek-R1-Distill families on ",
+    "url": "https://arxiv.org/abs/2512.23165v2"
+  },
+  {
+    "arxiv_id": "2509.07604v3",
+    "title": "K2-Think: A Parameter-Efficient Reasoning System",
+    "authors": [
+      "Zhoujun Cheng",
+      "Richard Fan",
+      "Shibo Hao",
+      "Taylor W. Killian",
+      "Haonan Li"
+    ],
+    "year": "2025",
+    "abstract": "K2-Think is a reasoning system that achieves state-of-the-art performance with a 32B parameter model, matching or surpassing much larger models like GPT-OSS 120B and DeepSeek v3.1. Built on the Qwen2.5 base model, our system shows that smaller models can compete at the highest levels by combining advanced post-training and test-time computation techniques. The approach is based on six key technical pillars: Long Chain-of-thought Supervised Finetuning, Reinforcement Learning with Verifiable Rewar",
+    "url": "https://arxiv.org/abs/2509.07604v3"
+  },
+  {
+    "arxiv_id": "2602.05261v1",
+    "title": "Length-Unbiased Sequence Policy Optimization: Revealing and Controlling Response Length Variation in RLVR",
+    "authors": [
+      "Fanfan Liu",
+      "Youyang Yin",
+      "Peng Shi",
+      "Siqi Yang",
+      "Zhixiong Zeng"
+    ],
+    "year": "2026",
+    "abstract": "Recent applications of Reinforcement Learning with Verifiable Rewards (RLVR) to Large Language Models (LLMs) and Vision-Language Models (VLMs) have demonstrated significant success in enhancing reasoning capabilities for complex tasks. During RLVR training, an increase in response length is often regarded as a key factor contributing to the growth of reasoning ability. However, the patterns of change in response length vary significantly across different RLVR algorithms during the training proce",
+    "url": "https://arxiv.org/abs/2602.05261v1"
+  },
+  {
+    "arxiv_id": "2601.22595v1",
+    "title": "Learn More with Less: Uncertainty Consistency Guided Query Selection for RLVR",
+    "authors": [
+      "Hao Yi",
+      "Yulan Hu",
+      "Xin Li",
+      "Sheng Ouyang",
+      "Lizhong Ding"
+    ],
+    "year": "2026",
+    "abstract": "Large Language Models (LLMs) have recently improved mathematical reasoning through Reinforcement Learning with Verifiable Reward (RLVR). However, existing RLVR algorithms require large query budgets, making annotation costly. We investigate whether fewer but more informative queries can yield similar or superior performance, introducing active learning (AL) into RLVR. We identify that classic AL sampling strategies fail to outperform random selection in this setting, due to ignoring objective un",
+    "url": "https://arxiv.org/abs/2601.22595v1"
+  },
+  {
+    "arxiv_id": "2509.02522v2",
+    "title": "Implicit Actor Critic Coupling via a Supervised Learning Framework for RLVR",
+    "authors": [
+      "Jiaming Li",
+      "Longze Chen",
+      "Ze Gong",
+      "Yukun Chen",
+      "Lu Wang"
+    ],
+    "year": "2025",
+    "abstract": "Recent advances in Reinforcement Learning with Verifiable Rewards (RLVR) have empowered large language models (LLMs) to tackle challenging reasoning tasks such as mathematics and programming. Despite its promise, the RLVR paradigm poses significant challenges, as existing methods often suffer from sparse reward signals and unstable policy gradient updates, inherent to RL-based approaches. To address the challenges, we propose $\\textbf{PACS}$, a novel RLVR framework that achieves im$\\textbf{P}$li",
+    "url": "https://arxiv.org/abs/2509.02522v2"
+  },
+  {
+    "arxiv_id": "2511.02463v3",
+    "title": "Extending RLVR to Open-Ended Tasks via Verifiable Multiple-Choice Reformulation",
+    "authors": [
+      "Mengyu Zhang",
+      "Siyu Ding",
+      "Weichong Yin",
+      "Yu Sun",
+      "Hua Wu"
+    ],
+    "year": "2025",
+    "abstract": "Reinforcement Learning with Verifiable Rewards(RLVR) has demonstrated great potential in enhancing the reasoning capabilities of large language models (LLMs). However, its success has thus far been largely confined to the mathematical and programming domains with clear and automatically checkable outcomes. Reinforcement learning on open-ended tasks (e.g., creative writing and subjective Q&amp;A) continues to rely on reward models due to the absence of verifiable solutions. This raises a key ques",
+    "url": "https://arxiv.org/abs/2511.02463v3"
+  },
+  {
+    "arxiv_id": "2602.16742v1",
+    "title": "DeepVision-103K: A Visually Diverse, Broad-Coverage, and Verifiable Mathematical Dataset for Multimodal Reasoning",
+    "authors": [
+      "Haoxiang Sun",
+      "Lizhen Xu",
+      "Bing Zhao",
+      "Wotao Yin",
+      "Wei Wang"
+    ],
+    "year": "2026",
+    "abstract": "Reinforcement Learning with Verifiable Rewards (RLVR) has been shown effective in enhancing the visual reflection and reasoning capabilities of Large Multimodal Models (LMMs). However, existing datasets are predominantly derived from either small-scale manual construction or recombination of prior resources, which limits data diversity and coverage, thereby constraining further gains in model performance. To this end, we introduce \\textbf{DeepVision-103K}, a comprehensive dataset for RLVR traini",
+    "url": "https://arxiv.org/abs/2602.16742v1"
+  },
+  {
+    "arxiv_id": "2601.19151v1",
+    "title": "TS-Debate: Multimodal Collaborative Debate for Zero-Shot Time Series Reasoning",
+    "authors": [
+      "Patara Trirat",
+      "Jin Myung Kwak",
+      "Jay Heo",
+      "Heejun Lee",
+      "Sung Ju Hwang"
+    ],
+    "year": "2026",
+    "abstract": "Recent progress at the intersection of large language models (LLMs) and time series (TS) analysis has revealed both promise and fragility. While LLMs can reason over temporal structure given carefully engineered context, they often struggle with numeric fidelity, modality interference, and principled cross-modal integration. We present TS-Debate, a modality-specialized, collaborative multi-agent debate framework for zero-shot time series reasoning. TS-Debate assigns dedicated expert agents to te",
+    "url": "https://arxiv.org/abs/2601.19151v1"
+  },
+  {
+    "arxiv_id": "2507.23348v1",
+    "title": "SWE-Debate: Competitive Multi-Agent Debate for Software Issue Resolution",
+    "authors": [
+      "Han Li",
+      "Yuling Shi",
+      "Shaoxin Lin",
+      "Xiaodong Gu",
+      "Heng Lian"
+    ],
+    "year": "2025",
+    "abstract": "Issue resolution has made remarkable progress thanks to the advanced reasoning capabilities of large language models (LLMs). Recently, agent-based frameworks such as SWE-agent have further advanced this progress by enabling autonomous, tool-using agents to tackle complex software engineering tasks. While existing agent-based issue resolution approaches are primarily based on agents' independent explorations, they often get stuck in local solutions and fail to identify issue patterns that span ac",
+    "url": "https://arxiv.org/abs/2507.23348v1"
+  },
+  {
+    "arxiv_id": "2601.22297v1",
+    "title": "Prepare Reasoning Language Models for Multi-Agent Debate with Self-Debate Reinforcement Learning",
+    "authors": [
+      "Chenxi Liu",
+      "Yanshuo Chen",
+      "Ruibo Chen",
+      "Tianyi Xiong",
+      "Tong Zheng"
+    ],
+    "year": "2026",
+    "abstract": "The reasoning abilities of large language models (LLMs) have been substantially improved by reinforcement learning with verifiable rewards (RLVR). At test time, collaborative reasoning through Multi-Agent Debate (MAD) has emerged as a promising approach for enhancing LLM performance. However, current RLVR methods typically train LLMs to solve problems in isolation, without explicitly preparing them to synthesize and benefit from different rationales that arise during debate. In this work, we pro",
+    "url": "https://arxiv.org/abs/2601.22297v1"
+  },
+  {
+    "arxiv_id": "2305.11595v3",
+    "title": "Examining Inter-Consistency of Large Language Models Collaboration: An In-depth Analysis via Debate",
+    "authors": [
+      "Kai Xiong",
+      "Xiao Ding",
+      "Yixin Cao",
+      "Ting Liu",
+      "Bing Qin"
+    ],
+    "year": "2023",
+    "abstract": "Large Language Models (LLMs) have shown impressive capabilities in various applications, but they still face various inconsistency issues. Existing works primarily focus on the inconsistency issues within a single LLM, while we complementarily explore the inter-consistency among multiple LLMs for collaboration. To examine whether LLMs can collaborate effectively to achieve a consensus for a shared goal, we focus on commonsense reasoning, and introduce a formal debate framework (FORD) to conduct ",
+    "url": "https://arxiv.org/abs/2305.11595v3"
+  },
+  {
+    "arxiv_id": "2504.05047v2",
+    "title": "Debate Only When Necessary: Adaptive Multiagent Collaboration for Efficient LLM Reasoning",
+    "authors": [
+      "Sugyeong Eo",
+      "Hyeonseok Moon",
+      "Evelyn Hayoon Zi",
+      "Chanjun Park",
+      "Heuiseok Lim"
+    ],
+    "year": "2025",
+    "abstract": "Multiagent collaboration has emerged as a promising framework for enhancing the reasoning capabilities of large language models (LLMs). Despite improvements in reasoning, the approach introduces substantial computational overhead resulting from iterative agent interactions. Furthermore, engaging in unnecessary debates increases the risk of generating erroneous responses. To address these challenges, we propose Debate Only When Necessary (DOWN), an adaptive multiagent debate framework that select",
+    "url": "https://arxiv.org/abs/2504.05047v2"
+  },
+  {
+    "arxiv_id": "2508.17536v2",
+    "title": "Debate or Vote: Which Yields Better Decisions in Multi-Agent Large Language Models?",
+    "authors": [
+      "Hyeong Kyu Choi",
+      "Xiaojin Zhu",
+      "Sharon Li"
+    ],
+    "year": "2025",
+    "abstract": "Multi-Agent Debate~(MAD) has emerged as a promising paradigm for improving the performance of large language models through collaborative reasoning. Despite recent advances, the key factors driving MAD's effectiveness remain unclear. In this work, we disentangle MAD into two key components--Majority Voting and inter-agent Debate--and assess their respective contributions. Through extensive experiments across seven NLP benchmarks, we find that Majority Voting alone accounts for most of the perfor",
+    "url": "https://arxiv.org/abs/2508.17536v2"
+  },
+  {
+    "arxiv_id": "2511.08317v2",
+    "title": "Automatic Paper Reviewing with Heterogeneous Graph Reasoning over LLM-Simulated Reviewer-Author Debates",
+    "authors": [
+      "Shuaimin Li",
+      "Liyang Fan",
+      "Yufang Lin",
+      "Zeyang Li",
+      "Xian Wei"
+    ],
+    "year": "2025",
+    "abstract": "Existing paper review methods often rely on superficial manuscript features or directly on large language models (LLMs), which are prone to hallucinations, biased scoring, and limited reasoning capabilities. Moreover, these methods often fail to capture the complex argumentative reasoning and negotiation dynamics inherent in reviewer-author interactions. To address these limitations, we propose ReViewGraph (Reviewer-Author Debates Graph Reasoner), a novel framework that performs heterogeneous gr",
+    "url": "https://arxiv.org/abs/2511.08317v2"
+  },
+  {
+    "arxiv_id": "2310.00280v3",
+    "title": "Corex: Pushing the Boundaries of Complex Reasoning through Multi-Model Collaboration",
+    "authors": [
+      "Qiushi Sun",
+      "Zhangyue Yin",
+      "Xiang Li",
+      "Zhiyong Wu",
+      "Xipeng Qiu"
+    ],
+    "year": "2023",
+    "abstract": "Large Language Models (LLMs) are evolving at an unprecedented pace and have exhibited considerable capability in the realm of natural language processing (NLP) with world knowledge. Benefiting from ultra-large-scale training corpora, a single LLM can manage typical NLP tasks competently. However, its performance in executing reasoning tasks is still confined by the limitations of its internal representations. To push this boundary further, we introduce Corex in this paper, a suite of novel gener",
+    "url": "https://arxiv.org/abs/2310.00280v3"
+  },
+  {
+    "arxiv_id": "2509.20502v1",
+    "title": "MARS: toward more efficient multi-agent collaboration for LLM reasoning",
+    "authors": [
+      "Xiao Wang",
+      "Jia Wang",
+      "Yijie Wang",
+      "Pengtao Dang",
+      "Sha Cao"
+    ],
+    "year": "2025",
+    "abstract": "Large language models (LLMs) have achieved impressive results in natural language understanding, yet their reasoning capabilities remain limited when operating as single agents. Multi-Agent Debate (MAD) has been proposed to address this limitation by enabling collaborative reasoning among multiple models in a round-table debate manner. While effective, MAD introduces substantial computational overhead due to the number of agents involved and the frequent communication required. In this paper, we",
+    "url": "https://arxiv.org/abs/2509.20502v1"
+  },
+  {
+    "arxiv_id": "2603.02438v1",
+    "title": "ORCA: Orchestrated Reasoning with Collaborative Agents for Document Visual Question Answering",
+    "authors": [
+      "Aymen Lassoued",
+      "Mohamed Ali Souibgui",
+      "Yousri Kessentini"
+    ],
+    "year": "2026",
+    "abstract": "Document Visual Question Answering (DocVQA) remains challenging for existing Vision-Language Models (VLMs), especially under complex reasoning and multi-step workflows. Current approaches struggle to decompose intricate questions into manageable sub-tasks and often fail to leverage specialized processing paths for different document elements. We present ORCA: Orchestrated Reasoning with Collaborative Agents for Document Visual Question Answering, a novel multi-agent framework that addresses thes",
+    "url": "https://arxiv.org/abs/2603.02438v1"
+  },
+  {
+    "arxiv_id": "2410.02551v2",
+    "title": "ColaCare: Enhancing Electronic Health Record Modeling through Large Language Model-Driven Multi-Agent Collaboration",
+    "authors": [
+      "Zixiang Wang",
+      "Yinghao Zhu",
+      "Huiya Zhao",
+      "Xiaochen Zheng",
+      "Dehao Sui"
+    ],
+    "year": "2024",
+    "abstract": "We introduce ColaCare, a framework that enhances Electronic Health Record (EHR) modeling through multi-agent collaboration driven by Large Language Models (LLMs). Our approach seamlessly integrates domain-specific expert models with LLMs to bridge the gap between structured EHR data and text-based reasoning. Inspired by the Multidisciplinary Team (MDT) approach used in clinical settings, ColaCare employs two types of agents: DoctorAgents and a MetaAgent, which collaboratively analyze patient dat",
+    "url": "https://arxiv.org/abs/2410.02551v2"
+  },
+  {
+    "arxiv_id": "2509.15172v3",
+    "title": "Self-Improvement of Language Models by Post-Training on Multi-Agent Debate",
+    "authors": [
+      "Ankur Samanta",
+      "Akshayaa Magesh",
+      "Runzhe Wu",
+      "Ayush Jain",
+      "Youliang Yu"
+    ],
+    "year": "2025",
+    "abstract": "Self-improvement, where models improve beyond their current performance without external supervision, remains a challenge. The core difficulty is sourcing a training signal stronger than what the model itself can currently produce. Majority voting has been shown to provide such a signal by aggregating over multiple samples, helping mitigate some of the inconsistencies in LM reasoning. In this work, we show that multi-agent debate--where models collaborate and exchange reasoning over multiple rou",
+    "url": "https://arxiv.org/abs/2509.15172v3"
+  },
+  {
+    "arxiv_id": "2506.11083v2",
+    "title": "RedDebate: Safer Responses through Multi-Agent Red Teaming Debates",
+    "authors": [
+      "Ali Asad",
+      "Stephen Obadinma",
+      "Radin Shayanfar",
+      "Xiaodan Zhu"
+    ],
+    "year": "2025",
+    "abstract": "We introduce RedDebate, a novel multi-agent debate framework that provides the foundation for Large Language Models (LLMs) to identify and mitigate their unsafe behaviours. Existing AI safety approaches often rely on costly human evaluation or isolated single-model assessment, both constrained by scalability and prone to oversight failures. RedDebate employs collaborative argumentation among multiple LLMs across diverse debate scenarios, enabling them to critically evaluate one another's reasoni",
+    "url": "https://arxiv.org/abs/2506.11083v2"
+  },
+  {
+    "arxiv_id": "2601.05746v1",
+    "title": "DynaDebate: Breaking Homogeneity in Multi-Agent Debate with Dynamic Path Generation",
+    "authors": [
+      "Zhenghao Li",
+      "Zhi Zheng",
+      "Wei Chen",
+      "Jielun Zhao",
+      "Yong Chen"
+    ],
+    "year": "2026",
+    "abstract": "Recent years have witnessed the rapid development of Large Language Model-based Multi-Agent Systems (MAS), which excel at collaborative decision-making and complex problem-solving. Recently, researchers have further investigated Multi-Agent Debate (MAD) frameworks, which enhance the reasoning and collaboration capabilities of MAS through information exchange and debate among multiple agents. However, existing approaches often rely on unguided initialization, causing agents to adopt identical rea",
+    "url": "https://arxiv.org/abs/2601.05746v1"
+  },
+  {
+    "arxiv_id": "2403.10107v2",
+    "title": "Enhancing Human-Centered Dynamic Scene Understanding via Multiple LLMs Collaborated Reasoning",
+    "authors": [
+      "Hang Zhang",
+      "Wenxiao Zhang",
+      "Haoxuan Qu",
+      "Jun Liu"
+    ],
+    "year": "2024",
+    "abstract": "Human-centered dynamic scene understanding plays a pivotal role in enhancing the capability of robotic and autonomous systems, in which Video-based Human-Object Interaction (V-HOI) detection is a crucial task in semantic scene understanding, aimed at comprehensively understanding HOI relationships within a video to benefit the behavioral decisions of mobile robots and autonomous driving systems. Although previous V-HOI detection models have made significant strides in accurate detection on speci",
+    "url": "https://arxiv.org/abs/2403.10107v2"
+  },
+  {
+    "arxiv_id": "2505.16400v3",
+    "title": "AceReason-Nemotron: Advancing Math and Code Reasoning through Reinforcement Learning",
+    "authors": [
+      "Yang Chen",
+      "Zhuolin Yang",
+      "Zihan Liu",
+      "Chankyu Lee",
+      "Peng Xu"
+    ],
+    "year": "2025",
+    "abstract": "Despite recent progress in large-scale reinforcement learning (RL) for reasoning, the training recipe for building high-performing reasoning models remains elusive. Key implementation details of frontier models, such as DeepSeek-R1, including data curation strategies and RL training recipe, are often omitted. Moreover, recent research indicates distillation remains more effective than RL for smaller models. In this work, we demonstrate that large-scale RL can significantly enhance the reasoning ",
+    "url": "https://arxiv.org/abs/2505.16400v3"
+  },
+  {
+    "arxiv_id": "2510.11769v2",
+    "title": "GAR: Generative Adversarial Reinforcement Learning for Formal Theorem Proving",
+    "authors": [
+      "Ruida Wang",
+      "Jiarui Yao",
+      "Rui Pan",
+      "Shizhe Diao",
+      "Tong Zhang"
+    ],
+    "year": "2025",
+    "abstract": "Solving math problems through verifiable languages such as Lean has significantly impacted both the mathematics and computer science communities. Current state-of-the-art models are often trained with expensive online Reinforcement Learning (RL) or expert iteration. However, these approaches rely on fixed problem sets, which causes inefficient training and limits the model to tackle complex problems. To overcome these limitations, we propose **GAR**: *Generative Adversarial Reinforcement learnin",
+    "url": "https://arxiv.org/abs/2510.11769v2"
+  },
+  {
+    "arxiv_id": "2505.24850v2",
+    "title": "Harnessing Negative Signals: Reinforcement Distillation from Teacher Data for LLM Reasoning",
+    "authors": [
+      "Shuyao Xu",
+      "Cheng Peng",
+      "Jiangxuan Long",
+      "Weidi Xu",
+      "Wei Chu"
+    ],
+    "year": "2025",
+    "abstract": "Recent advances in model distillation show that data from advanced reasoning models can effectively train smaller student models. However, standard practices discard incorrect reasoning traces -- valuable, yet underutilized data. This paper addresses the critical question: How can both positive and negative distilled reasoning traces be effectively leveraged to maximize LLM reasoning performance in an offline setting? We employ a two-stage training recipe: first, Supervised Fine-Tuning (SFT) on ",
+    "url": "https://arxiv.org/abs/2505.24850v2"
+  },
+  {
+    "arxiv_id": "2503.04808v1",
+    "title": "Learning from Failures in Multi-Attempt Reinforcement Learning",
+    "authors": [
+      "Stephen Chung",
+      "Wenyu Du",
+      "Jie Fu"
+    ],
+    "year": "2025",
+    "abstract": "Recent advancements in reinforcement learning (RL) for large language models (LLMs), exemplified by DeepSeek R1, have shown that even a simple question-answering task can substantially improve an LLM's reasoning capabilities. In this work, we extend this approach by modifying the task into a multi-attempt setting. Instead of generating a single response per question, the model is given multiple attempts, with feedback provided after incorrect responses. The multi-attempt task encourages the mode",
+    "url": "https://arxiv.org/abs/2503.04808v1"
+  },
+  {
+    "arxiv_id": "2509.23219v1",
+    "title": "WirelessMathLM: Teaching Mathematical Reasoning for LLMs in Wireless Communications with Reinforcement Learning",
+    "authors": [
+      "Xin Li",
+      "Mengbing Liu",
+      "Yiyang Zhu",
+      "Wenhe Zhang",
+      "Li Wei"
+    ],
+    "year": "2025",
+    "abstract": "Large language models (LLMs) excel at general mathematical reasoning but fail catastrophically on specialized technical mathematics. In wireless communications, where problems require precise manipulation of information-theoretic bounds, optimization constraints, and signal processing formulations, even state-of-the-art models struggle to achieve competent performance. We present WirelessMathLM, demonstrating that compact models (0.5B-7B parameters) can match or exceed much larger models through",
+    "url": "https://arxiv.org/abs/2509.23219v1"
+  },
+  {
+    "arxiv_id": "2505.07686v2",
+    "title": "S-GRPO: Early Exit via Reinforcement Learning in Reasoning Models",
+    "authors": [
+      "Muzhi Dai",
+      "Chenxu Yang",
+      "Qingyi Si"
+    ],
+    "year": "2025",
+    "abstract": "As Test-Time Scaling emerges as an active research focus in the large language model community, advanced post-training methods increasingly emphasize extending chain-of-thought (CoT) generation length, thereby enhancing reasoning capabilities to approach Deepseek R1-like reasoning models. However, recent studies reveal that reasoning models (even Qwen3) consistently exhibit excessive thought redundancy in CoT generation. This overthinking issue arises from the inherent limitations of conventiona",
+    "url": "https://arxiv.org/abs/2505.07686v2"
+  },
+  {
+    "arxiv_id": "2510.11653v1",
+    "title": "MATH-Beyond: A Benchmark for RL to Expand Beyond the Base Model",
+    "authors": [
+      "Prasanna Mayilvahanan",
+      "Ricardo Dominguez-Olmedo",
+      "Thadd\u00e4us Wiedemer",
+      "Wieland Brendel"
+    ],
+    "year": "2025",
+    "abstract": "With the advent of DeepSeek-R1, a new wave of reinforcement learning (RL) methods has emerged that seem to unlock stronger mathematical reasoning. However, a closer look at the open-source ecosystem reveals a critical limitation: with sufficiently many draws (e.g., $\\texttt{pass@1024}$), many existing base models already solve nearly all questions on widely used math benchmarks such as MATH-500 and AIME 2024. This suggests that the RL fine-tuning methods prevalent in the LLM reasoning literature",
+    "url": "https://arxiv.org/abs/2510.11653v1"
+  },
+  {
+    "arxiv_id": "2508.02833v4",
+    "title": "TIC-GRPO: Provable and Efficient Optimization for Reinforcement Learning from Human Feedback",
+    "authors": [
+      "Lei Pang",
+      "Jun Luo",
+      "Ruinan Jin"
+    ],
+    "year": "2025",
+    "abstract": "Group Relative Policy Optimization (GRPO), recently introduced by DeepSeek, is a critic-free reinforcement learning algorithm for fine-tuning large language models. GRPO replaces the value function in Proximal Policy Optimization (PPO) with group-normalized rewards while retaining PPO-style token-level importance sampling based on an old policy. Our theoretical analysis reveals that the GRPO update rule estimates the policy gradient at the old policy rather than the current one; however, since t",
+    "url": "https://arxiv.org/abs/2508.02833v4"
+  },
+  {
+    "arxiv_id": "2503.18892v3",
+    "title": "SimpleRL-Zoo: Investigating and Taming Zero Reinforcement Learning for Open Base Models in the Wild",
+    "authors": [
+      "Weihao Zeng",
+      "Yuzhen Huang",
+      "Qian Liu",
+      "Wei Liu",
+      "Keqing He"
+    ],
+    "year": "2025",
+    "abstract": "DeepSeek-R1 has shown that long chain-of-thought (CoT) reasoning can naturally emerge through a simple reinforcement learning (RL) framework with rule-based rewards, where the training may directly start from the base models-a paradigm referred to as zero RL training. Most recent efforts to reproduce zero RL training have primarily focused on the Qwen2.5 model series, which may not be representative as we find the base models already exhibit strong instruction-following and self-reflection abili",
+    "url": "https://arxiv.org/abs/2503.18892v3"
+  },
+  {
+    "arxiv_id": "2506.02177v1",
+    "title": "Act Only When It Pays: Efficient Reinforcement Learning for LLM Reasoning via Selective Rollouts",
+    "authors": [
+      "Haizhong Zheng",
+      "Yang Zhou",
+      "Brian R. Bartoldson",
+      "Bhavya Kailkhura",
+      "Fan Lai"
+    ],
+    "year": "2025",
+    "abstract": "Reinforcement learning, such as PPO and GRPO, has powered recent breakthroughs in LLM reasoning. Scaling rollout to sample more prompts enables models to selectively use higher-quality data for training, which can stabilize RL training and improve model performance. However, this comes at the cost of significant computational overhead. In this paper, we show that a substantial portion of this overhead can be avoided by skipping uninformative prompts before rollout. Our analysis of reward dynamic",
+    "url": "https://arxiv.org/abs/2506.02177v1"
+  },
+  {
+    "arxiv_id": "2505.18086v1",
+    "title": "Stable Reinforcement Learning for Efficient Reasoning",
+    "authors": [
+      "Muzhi Dai",
+      "Shixuan Liu",
+      "Qingyi Si"
+    ],
+    "year": "2025",
+    "abstract": "The success of Deepseek-R1 has drawn the LLM community's attention to reinforcement learning (RL) methods like GRPO. However, such rule-based 0/1 outcome reward methods lack the capability to regulate the intermediate reasoning processes during chain-of-thought (CoT) generation, leading to severe overthinking phenomena. In response, recent studies have designed reward functions to reinforce models' behaviors in producing shorter yet correct completions. Nevertheless, we observe that these length",
+    "url": "https://arxiv.org/abs/2505.18086v1"
+  },
+  {
+    "arxiv_id": "2601.19620v2",
+    "title": "R^3: Replay, Reflection, and Ranking Rewards for LLM Reinforcement Learning",
+    "authors": [
+      "Zhizheng Jiang",
+      "Kang Zhao",
+      "Weikai Xu",
+      "Xinkui Lin",
+      "Wei Liu"
+    ],
+    "year": "2026",
+    "abstract": "Large reasoning models (LRMs) aim to solve diverse and complex problems through structured reasoning. Recent advances in group-based policy optimization methods have shown promise in enabling stable advantage estimation without reliance on process-level annotations. However, these methods rely on advantage gaps induced by high-quality samples within the same batch, which makes the training process fragile and inefficient when intra-group advantages collapse under challenging tasks. To address th",
+    "url": "https://arxiv.org/abs/2601.19620v2"
+  },
+  {
+    "arxiv_id": "2505.16368v4",
+    "title": "SATURN: SAT-based Reinforcement Learning to Unleash LLMs Reasoning",
+    "authors": [
+      "Huanyu Liu",
+      "Ge Li",
+      "Jia Li",
+      "Hao Zhu",
+      "Kechi Zhang"
+    ],
+    "year": "2025",
+    "abstract": "How to design reinforcement learning (RL) tasks that effectively unleash the reasoning capability of large language models (LLMs) remains an open question. Existing RL tasks (e.g., math, programming, and constructing reasoning tasks) suffer from three key limitations: (1) Scalability. They rely heavily on human annotation or expensive LLM synthesis to generate sufficient training data. (2) Verifiability. LLMs' outputs are hard to verify automatically and reliably. (3) Controllable Difficulty. Mo",
+    "url": "https://arxiv.org/abs/2505.16368v4"
+  },
+  {
+    "arxiv_id": "2504.11536v2",
+    "title": "ReTool: Reinforcement Learning for Strategic Tool Use in LLMs",
+    "authors": [
+      "Jiazhan Feng",
+      "Shijue Huang",
+      "Xingwei Qu",
+      "Ge Zhang",
+      "Yujia Qin"
+    ],
+    "year": "2025",
+    "abstract": "While reasoning models (e.g., DeepSeek R1) trained with reinforcement learning (RL), excel in textual reasoning, they struggle in scenarios requiring structured problem-solving, such as geometric reasoning, concise computation, or complex equation solving-areas where computational tools like code interpreters (CI) demonstrate distinct advantages. To bridge this gap, we propose ReTool, which enhances long-form reasoning with tool-integrated learning, including two key features: (1) dynamic interl",
+    "url": "https://arxiv.org/abs/2504.11536v2"
+  },
+  {
+    "arxiv_id": "2310.16535v1",
+    "title": "R$^3$ Prompting: Review, Rephrase and Resolve for Chain-of-Thought Reasoning in Large Language Models under Noisy Context",
+    "authors": [
+      "Qingyuan Tian",
+      "Hanlun Zhu",
+      "Lei Wang",
+      "Yang Li",
+      "Yunshi Lan"
+    ],
+    "year": "2023",
+    "abstract": "With the help of Chain-of-Thought (CoT) prompting, Large Language Models (LLMs) have achieved remarkable performance on various reasoning tasks. However, most of them have been evaluated under noise-free context and the dilemma for LLMs to produce inaccurate results under the noisy context has not been fully investigated. Existing studies utilize trigger sentences to encourage LLMs to concentrate on the relevant information but the trigger has limited effect on final answer prediction. Inspired ",
+    "url": "https://arxiv.org/abs/2310.16535v1"
+  },
+  {
+    "arxiv_id": "2410.23856v1",
+    "title": "Can Language Models Perform Robust Reasoning in Chain-of-thought Prompting with Noisy Rationales?",
+    "authors": [
+      "Zhanke Zhou",
+      "Rong Tao",
+      "Jianing Zhu",
+      "Yiwen Luo",
+      "Zengmao Wang"
+    ],
+    "year": "2024",
+    "abstract": "This paper investigates an under-explored challenge in large language models (LLMs): chain-of-thought prompting with noisy rationales, which include irrelevant or inaccurate reasoning thoughts within examples used for in-context learning. We construct NoRa dataset that is tailored to evaluate the robustness of reasoning in the presence of noisy rationales. Our findings on NoRa dataset reveal a prevalent vulnerability to such noise among current LLMs, with existing robust methods like self-correc",
+    "url": "https://arxiv.org/abs/2410.23856v1"
+  },
+  {
+    "arxiv_id": "2411.10541v1",
+    "title": "Does Prompt Formatting Have Any Impact on LLM Performance?",
+    "authors": [
+      "Jia He",
+      "Mukund Rungta",
+      "David Koleczek",
+      "Arshdeep Sekhon",
+      "Franklin X Wang"
+    ],
+    "year": "2024",
+    "abstract": "In the realm of Large Language Models (LLMs), prompt optimization is crucial for model performance. Although previous research has explored aspects like rephrasing prompt contexts, using various prompting techniques (like in-context learning and chain-of-thought), and ordering few-shot examples, our understanding of LLM sensitivity to prompt templates remains limited. Therefore, this paper examines the impact of different prompt templates on LLM performance. We formatted the same contexts into v",
+    "url": "https://arxiv.org/abs/2411.10541v1"
+  },
+  {
+    "arxiv_id": "2510.05365v1",
+    "title": "Test Case Generation from Bug Reports via Large Language Models: A Cognitive Layered Evaluation Framework",
+    "authors": [
+      "Irtaza Sajid Qureshi",
+      "Zhen Ming",
+      " Jiang"
+    ],
+    "year": "2025",
+    "abstract": "Large Language Models (LLMs) are increasingly applied to automated software testing, yet their ability to generalize beyond memorized patterns and reason about natural language bug reports remains unclear. We present a systematic evaluation of LLM reasoning in test case generation, structured around the cognitive layers of Bloom's taxonomy: \\textit{Remember}, \\textit{Understand}, \\textit{Apply}, \\textit{Analyze}, \\textit{Evaluate}, and \\textit{Create}, which progressively assess higher levels of",
+    "url": "https://arxiv.org/abs/2510.05365v1"
+  },
+  {
+    "arxiv_id": "2410.04778v2",
+    "title": "MM-R$^3$: On (In-)Consistency of Vision-Language Models (VLMs)",
+    "authors": [
+      "Shih-Han Chou",
+      "Shivam Chandhok",
+      "James J. Little",
+      "Leonid Sigal"
+    ],
+    "year": "2024",
+    "abstract": "With the advent of LLMs and variants, a flurry of research has emerged, analyzing the performance of such models across an array of tasks. While most studies focus on evaluating the capabilities of state-of-the-art (SoTA) Vision Language Models (VLMs) through task accuracy (e.g., visual question answering, grounding), our work explores the related but complementary aspect of consistency - the ability of a VLM to produce semantically similar or identical responses to semantically similar queries.",
+    "url": "https://arxiv.org/abs/2410.04778v2"
+  },
+  {
+    "arxiv_id": "2406.09397v1",
+    "title": "Aligning Vision Models with Human Aesthetics in Retrieval: Benchmarks and Algorithms",
+    "authors": [
+      "Miaosen Zhang",
+      "Yixuan Wei",
+      "Zhen Xing",
+      "Yifei Ma",
+      "Zuxuan Wu"
+    ],
+    "year": "2024",
+    "abstract": "Modern vision models are trained on very large noisy datasets. While these models acquire strong capabilities, they may not follow the user's intent to output the desired results in certain aspects, e.g., visual aesthetic, preferred style, and responsibility. In this paper, we target the realm of visual aesthetics and aim to align vision models with human aesthetic standards in a retrieval system. Advanced retrieval systems usually adopt a cascade of aesthetic models as re-rankers or filters, wh",
+    "url": "https://arxiv.org/abs/2406.09397v1"
+  },
+  {
+    "arxiv_id": "2511.03325v2",
+    "title": "SurgViVQA: Temporally-Grounded Video Question Answering for Surgical Scene Understanding",
+    "authors": [
+      "Mauro Orazio Drago",
+      "Luca Carlini",
+      "Pelinsu Celebi Balyemez",
+      "Dennis Pierantozzi",
+      "Chiara Lena"
+    ],
+    "year": "2025",
+    "abstract": "Video Question Answering (VideoQA) in the surgical domain aims to enhance intraoperative understanding by enabling AI models to reason over temporally coherent events rather than isolated frames. Current approaches are limited to static image features, and available datasets often lack temporal annotations, ignoring the dynamics critical for accurate procedural interpretation. We propose SurgViVQA, a surgical VideoQA model that extends visual reasoning from static images to dynamic surgical scen",
+    "url": "https://arxiv.org/abs/2511.03325v2"
+  }
+]

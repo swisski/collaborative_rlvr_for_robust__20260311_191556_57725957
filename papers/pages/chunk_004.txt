@@ -1,0 +1,145 @@
+include:
+• Readability: A key limitation of DeepSeek-R1-Zero is that its content is often not suitable
+for reading. Responses may mix multiple languages or lack markdown formatting to
+highlight answers for users. In contrast, when creating cold-start data for DeepSeek-R1,
+we design a readable pattern that includes a summary at the end of each response and
+filters out responses that are not reader-friendly. Here, we define the output format as
+|special_token|<reasoning_process>|special_token|<summary>, where the reasoning
+process is the CoT for the query, and the summary is used to summarize the reasoning
+results.
+• Potential: By carefully designing the pattern for cold-start data with human priors, we
+observe better performance against DeepSeek-R1-Zero. We believe the iterative training is
+a better way for reasoning models.
+2.3.2. Reasoning-oriented Reinforcement Learning
+After fine-tuning DeepSeek-V3-Base on the cold start data, we apply the same large-scale
+reinforcement learning training process as employed in DeepSeek-R1-Zero. This phase focuses
+on enhancing the model’s reasoning capabilities, particularly in reasoning-intensive tasks such
+as coding, mathematics, science, and logic reasoning, which involve well-defined problems with
+clear solutions. During the training process, we observe that CoT often exhibits language mixing,
+particularly when RL prompts involve multiple languages. To mitigate the issue of language
+mixing, we introduce a language consistency reward during RL training, which is calculated
+as the proportion of target language words in the CoT. Although ablation experiments show
+that such alignment results in a slight degradation in the model’s performance, this reward
+aligns with human preferences, making it more readable. Finally, we combine the accuracy of
+reasoning tasks and the reward for language consistency by directly summing them to form the
+final reward. We then apply RL training on the fine-tuned model until it achieves convergence
+on reasoning tasks.
+2.3.3. Rejection Sampling and Supervised Fine-Tuning
+When reasoning-oriented RL converges, we utilize the resulting checkpoint to collect SFT
+(Supervised Fine-Tuning) data for the subsequent round. Unlike the initial cold-start data, which
+primarily focuses on reasoning, this stage incorporates data from other domains to enhance the
+model’s capabilities in writing, role-playing, and other general-purpose tasks. Specifically, we
+generate the data and fine-tune the model as described below.
+Reasoning data
+We curate reasoning prompts and generate reasoning trajectories by perform-
+ing rejection sampling from the checkpoint from the above RL training. In the previous stage,
+we only included data that could be evaluated using rule-based rewards. However, in this stage,
+we expand the dataset by incorporating additional data, some of which use a generative reward
+model by feeding the ground-truth and model predictions into DeepSeek-V3 for judgment.
+Additionally, because the model output is sometimes chaotic and difficult to read, we have
+filtered out chain-of-thought with mixed languages, long parapraphs, and code blocks. For
+each prompt, we sample multiple responses and retain only the correct ones. In total, we collect
+about 600k reasoning related training samples.
+10
+
+--- PAGE BREAK ---
+Non-Reasoning data
+For non-reasoning data, such as writing, factual QA, self-cognition,
+and translation, we adopt the DeepSeek-V3 pipeline and reuse portions of the SFT dataset of
+DeepSeek-V3. For certain non-reasoning tasks, we call DeepSeek-V3 to generate a potential
+chain-of-thought before answering the question by prompting. However, for simpler queries,
+such as “hello” we do not provide a CoT in response. In the end, we collected a total of
+approximately 200k training samples that are unrelated to reasoning.
+We fine-tune DeepSeek-V3-Base for two epochs using the above curated dataset of about
+800k samples.
+2.3.4. Reinforcement Learning for all Scenarios
+To further align the model with human preferences, we implement a secondary reinforcement
+learning stage aimed at improving the model’s helpfulness and harmlessness while simultane-
+ously refining its reasoning capabilities. Specifically, we train the model using a combination
+of reward signals and diverse prompt distributions. For reasoning data, we adhere to the
+methodology outlined in DeepSeek-R1-Zero, which utilizes rule-based rewards to guide the
+learning process in math, code, and logical reasoning domains. For general data, we resort to
+reward models to capture human preferences in complex and nuanced scenarios. We build
+upon the DeepSeek-V3 pipeline and adopt a similar distribution of preference pairs and train-
+ing prompts. For helpfulness, we focus exclusively on the final summary, ensuring that the
+assessment emphasizes the utility and relevance of the response to the user while minimizing
+interference with the underlying reasoning process. For harmlessness, we evaluate the entire
+response of the model, including both the reasoning process and the summary, to identify and
+mitigate any potential risks, biases, or harmful content that may arise during the generation
+process. Ultimately, the integration of reward signals and diverse data distributions enables us
+to train a model that excels in reasoning while prioritizing helpfulness and harmlessness.
+2.4. Distillation: Empower Small Models with Reasoning Capability
+To equip more efficient smaller models with reasoning capabilities like DeepSeek-R1, we directly
+fine-tuned open-source models like Qwen (Qwen, 2024b) and Llama (AI@Meta, 2024) using
+the 800k samples curated with DeepSeek-R1, as detailed in §2.3.3. Our findings indicate that
+this straightforward distillation method significantly enhances the reasoning abilities of smaller
+models. The base models we use here are Qwen2.5-Math-1.5B, Qwen2.5-Math-7B, Qwen2.5-
+14B, Qwen2.5-32B, Llama-3.1-8B, and Llama-3.3-70B-Instruct. We select Llama-3.3 because its
+reasoning capability is slightly better than that of Llama-3.1.
+For distilled models, we apply only SFT and do not include an RL stage, even though
+incorporating RL could substantially boost model performance. Our primary goal here is to
+demonstrate the effectiveness of the distillation technique, leaving the exploration of the RL
+stage to the broader research community.
+3. Experiment
+Benchmarks
+We evaluate models on MMLU (Hendrycks et al., 2020), MMLU-Redux (Gema
+et al., 2024), MMLU-Pro (Wang et al., 2024), C-Eval (Huang et al., 2023), and CMMLU (Li et al.,
+2023), IFEval (Zhou et al., 2023), FRAMES (Krishna et al., 2024), GPQA Diamond (Rein et al.,
+2023), SimpleQA (OpenAI, 2024c), C-SimpleQA (He et al., 2024), SWE-Bench Verified (OpenAI,
+11
+
+--- PAGE BREAK ---
+2024d), Aider 1, LiveCodeBench (Jain et al., 2024) (2024-08 – 2025-01), Codeforces 2, Chinese
+National High School Mathematics Olympiad (CNMO 2024)3, and American Invitational Math-
+ematics Examination 2024 (AIME 2024) (MAA, 2024). In addition to standard benchmarks, we
+also evaluate our models on open-ended generation tasks using LLMs as judges. Specifically, we
+adhere to the original configurations of AlpacaEval 2.0 (Dubois et al., 2024) and Arena-Hard (Li
+et al., 2024), which leverage GPT-4-Turbo-1106 as judges for pairwise comparisons. Here, we
+only feed the final summary to evaluation to avoid the length bias. For distilled models, we
+report representative results on AIME 2024, MATH-500, GPQA Diamond, Codeforces, and
+LiveCodeBench.
+Evaluation Prompts
+Following the setup in DeepSeek-V3, standard benchmarks such as
+MMLU, DROP, GPQA Diamond, and SimpleQA are evaluated using prompts from the simple-
+evals framework. For MMLU-Redux, we adopt the Zero-Eval prompt format (Lin, 2024) in a
+zero-shot setting. In terms of MMLU-Pro, C-Eval and CLUE-WSC, since the original prompts
+are few-shot, we slightly modify the prompt to the zero-shot setting. The CoT in few-shot
+may hurt the performance of DeepSeek-R1. Other datasets follow their original evaluation
+protocols with default prompts provided by their creators. For code and math benchmarks, the
+HumanEval-Mul dataset covers eight mainstream programming languages (Python, Java, C++,
+C#, JavaScript, TypeScript, PHP, and Bash). Model performance on LiveCodeBench is evaluated
+using CoT format, with data collected between August 2024 and January 2025. The Codeforces
+dataset is evaluated using problems from 10 Div.2 contests along with expert-crafted test cases,
+after which the expected ratings and percentages of competitors are calculated. SWE-Bench
+verified results are obtained via the agentless framework (Xia et al., 2024). AIDER-related
+benchmarks are measured using a "diff" format. DeepSeek-R1 outputs are capped at a maximum
+of 32,768 tokens for each benchmark.
+Baselines
+We conduct comprehensive evaluations against several strong baselines, including
+DeepSeek-V3, Claude-Sonnet-3.5-1022, GPT-4o-0513, OpenAI-o1-mini, and OpenAI-o1-1217.
+Since accessing the OpenAI-o1-1217 API is challenging in mainland China, we report its perfor-
+mance based on official reports. For distilled models, we also compare the open-source model
+QwQ-32B-Preview (Qwen, 2024a).
+Evaluation Setup
+We set the maximum generation length to 32,768 tokens for the models.
+We found that using greedy decoding to evaluate long-output reasoning models results in
+higher repetition rates and significant variability across different checkpoints. Therefore, we
+default to pass@𝑘evaluation (Chen et al., 2021) and report pass@1 using a non-zero temperature.
+Specifically, we use a sampling temperature of 0.6 and a top-𝑝value of 0.95 to generate 𝑘
+responses (typically between 4 and 64, depending on the test set size) for each question. Pass@1
+is then calculated as
+pass@1 = 1
+𝑘
+𝑘
+∑︁
+𝑖=1
+𝑝𝑖,
+where 𝑝𝑖denotes the correctness of the 𝑖-th response. This method provides more reliable
+performance estimates. For AIME 2024, we also report consensus (majority vote) results (Wang
+et al., 2022) using 64 samples, denoted as cons@64.
+1https://aider.chat
+2https://codeforces.com
+3https://www.cms.org.cn/Home/comp/comp/cid/12.html
+12
+
+--- PAGE BREAK ---

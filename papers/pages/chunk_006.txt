@@ -1,0 +1,134 @@
+exponentially larger search space. To address this, we set a maximum extension limit for each
+node, but this can lead to the model getting stuck in local optima. Second, the value model
+directly influences the quality of generation since it guides each step of the search process.
+Training a fine-grained value model is inherently difficult, which makes it challenging for the
+model to iteratively improve. While AlphaGo’s core success relied on training a value model to
+progressively enhance its performance, this principle proves difficult to replicate in our setup
+due to the complexities of token generation.
+In conclusion, while MCTS can improve performance during inference when paired with a
+pre-trained value model, iteratively boosting model performance through self-search remains a
+significant challenge.
+5. Conclusion, Limitations, and Future Work
+In this work, we share our journey in enhancing model reasoning abilities through reinforcement
+learning. DeepSeek-R1-Zero represents a pure RL approach without relying on cold-start
+data, achieving strong performance across various tasks. DeepSeek-R1 is more powerful,
+leveraging cold-start data alongside iterative RL fine-tuning. Ultimately, DeepSeek-R1 achieves
+performance comparable to OpenAI-o1-1217 on a range of tasks.
+We further explore distillation the reasoning capability to small dense models. We use
+DeepSeek-R1 as the teacher model to generate 800K training samples, and fine-tune several small
+dense models. The results are promising: DeepSeek-R1-Distill-Qwen-1.5B outperforms GPT-4o
+and Claude-3.5-Sonnet on math benchmarks with 28.9% on AIME and 83.9% on MATH. Other
+dense models also achieve impressive results, significantly outperforming other instruction-
+tuned models based on the same underlying checkpoints.
+In the future, we plan to invest in research across the following directions for DeepSeek-R1.
+• General Capability: Currently, the capabilities of DeepSeek-R1 fall short of DeepSeek-V3
+in tasks such as function calling, multi-turn, complex role-playing, and JSON output.
+Moving forward, we plan to explore how long CoT can be leveraged to enhance tasks in
+these fields.
+• Language Mixing: DeepSeek-R1 is currently optimized for Chinese and English, which
+may result in language mixing issues when handling queries in other languages. For
+instance, DeepSeek-R1 might use English for reasoning and responses, even if the query is
+in a language other than English or Chinese. We aim to address this limitation in future
+updates.
+• Prompting Engineering: When evaluating DeepSeek-R1, we observe that it is sensitive
+to prompts. Few-shot prompting consistently degrades its performance. Therefore, we
+recommend users directly describe the problem and specify the output format using a
+zero-shot setting for optimal results.
+• Software Engineering Tasks: Due to the long evaluation times, which impact the effi-
+ciency of the RL process, large-scale RL has not been applied extensively in software
+engineering tasks. As a result, DeepSeek-R1 has not demonstrated a huge improvement
+over DeepSeek-V3 on software engineering benchmarks. Future versions will address
+this by implementing rejection sampling on software engineering data or incorporating
+asynchronous evaluations during the RL process to improve efficiency.
+16
+
+--- PAGE BREAK ---
+References
+AI@Meta. Llama 3.1 model card, 2024. URL https://github.com/meta-llama/llama-m
+odels/blob/main/models/llama3_1/MODEL_CARD.md.
+Anthropic. Claude 3.5 sonnet, 2024. URL https://www.anthropic.com/news/claude-3
+-5-sonnet.
+M. Chen, J. Tworek, H. Jun, Q. Yuan, H. P. de Oliveira Pinto, J. Kaplan, H. Edwards, Y. Burda,
+N. Joseph, G. Brockman, A. Ray, R. Puri, G. Krueger, M. Petrov, H. Khlaaf, G. Sastry, P. Mishkin,
+B. Chan, S. Gray, N. Ryder, M. Pavlov, A. Power, L. Kaiser, M. Bavarian, C. Winter, P. Tillet,
+F. P. Such, D. Cummings, M. Plappert, F. Chantzis, E. Barnes, A. Herbert-Voss, W. H. Guss,
+A. Nichol, A. Paino, N. Tezak, J. Tang, I. Babuschkin, S. Balaji, S. Jain, W. Saunders, C. Hesse,
+A. N. Carr, J. Leike, J. Achiam, V. Misra, E. Morikawa, A. Radford, M. Knight, M. Brundage,
+M. Murati, K. Mayer, P. Welinder, B. McGrew, D. Amodei, S. McCandlish, I. Sutskever, and
+W. Zaremba. Evaluating large language models trained on code. CoRR, abs/2107.03374, 2021.
+URL https://arxiv.org/abs/2107.03374.
+A. Dubey, A. Jauhri, A. Pandey, A. Kadian, A. Al-Dahle, A. Letman, A. Mathur, A. Schelten,
+A. Yang, A. Fan, et al. The llama 3 herd of models. arXiv preprint arXiv:2407.21783, 2024.
+Y. Dubois, B. Galambosi, P. Liang, and T. B. Hashimoto. Length-controlled alpacaeval: A simple
+way to debias automatic evaluators. arXiv preprint arXiv:2404.04475, 2024.
+X. Feng, Z. Wan, M. Wen, S. M. McAleer, Y. Wen, W. Zhang, and J. Wang. Alphazero-like
+tree-search can guide large language model decoding and training, 2024. URL https:
+//arxiv.org/abs/2309.17179.
+L. Gao, J. Schulman, and J. Hilton. Scaling laws for reward model overoptimization, 2022. URL
+https://arxiv.org/abs/2210.10760.
+A. P. Gema, J. O. J. Leang, G. Hong, A. Devoto, A. C. M. Mancino, R. Saxena, X. He, Y. Zhao,
+X. Du, M. R. G. Madani, C. Barale, R. McHardy, J. Harris, J. Kaddour, E. van Krieken, and
+P. Minervini. Are we done with mmlu? CoRR, abs/2406.04127, 2024. URL https://doi.or
+g/10.48550/arXiv.2406.04127.
+Google. Our next-generation model: Gemini 1.5, 2024. URL https://blog.google/techno
+logy/ai/google-gemini-next-generation-model-february-2024.
+Y. He, S. Li, J. Liu, Y. Tan, W. Wang, H. Huang, X. Bu, H. Guo, C. Hu, B. Zheng, et al. Chi-
+nese simpleqa: A chinese factuality evaluation for large language models. arXiv preprint
+arXiv:2411.07140, 2024.
+D. Hendrycks, C. Burns, S. Basart, A. Zou, M. Mazeika, D. Song, and J. Steinhardt. Measuring
+massive multitask language understanding. arXiv preprint arXiv:2009.03300, 2020.
+Y. Huang, Y. Bai, Z. Zhu, J. Zhang, J. Zhang, T. Su, J. Liu, C. Lv, Y. Zhang, J. Lei, et al. C-Eval: A
+multi-level multi-discipline chinese evaluation suite for foundation models. arXiv preprint
+arXiv:2305.08322, 2023.
+N. Jain, K. Han, A. Gu, W. Li, F. Yan, T. Zhang, S. Wang, A. Solar-Lezama, K. Sen, and I. Stoica.
+Livecodebench: Holistic and contamination free evaluation of large language models for code.
+CoRR, abs/2403.07974, 2024. URL https://doi.org/10.48550/arXiv.2403.07974.
+17
+
+--- PAGE BREAK ---
+S. Krishna, K. Krishna, A. Mohananey, S. Schwarcz, A. Stambler, S. Upadhyay, and M. Faruqui.
+Fact, fetch, and reason: A unified evaluation of retrieval-augmented generation. CoRR,
+abs/2409.12941, 2024. doi: 10.48550/ARXIV.2409.12941. URL https://doi.org/10.485
+50/arXiv.2409.12941.
+A. Kumar, V. Zhuang, R. Agarwal, Y. Su, J. D. Co-Reyes, A. Singh, K. Baumli, S. Iqbal, C. Bishop,
+R. Roelofs, et al. Training language models to self-correct via reinforcement learning. arXiv
+preprint arXiv:2409.12917, 2024.
+H. Li, Y. Zhang, F. Koto, Y. Yang, H. Zhao, Y. Gong, N. Duan, and T. Baldwin. CMMLU: Measur-
+ing massive multitask language understanding in Chinese. arXiv preprint arXiv:2306.09212,
+2023.
+T. Li, W.-L. Chiang, E. Frick, L. Dunlap, T. Wu, B. Zhu, J. E. Gonzalez, and I. Stoica. From
+crowdsourced data to high-quality benchmarks: Arena-hard and benchbuilder pipeline. arXiv
+preprint arXiv:2406.11939, 2024.
+H. Lightman, V. Kosaraju, Y. Burda, H. Edwards, B. Baker, T. Lee, J. Leike, J. Schulman,
+I. Sutskever, and K. Cobbe. Let’s verify step by step. arXiv preprint arXiv:2305.20050, 2023.
+B. Y. Lin. ZeroEval: A Unified Framework for Evaluating Language Models, July 2024. URL
+https://github.com/WildEval/ZeroEval.
+MAA.
+American invitational mathematics examination - aime.
+In American Invitational
+Mathematics Examination - AIME 2024, February 2024. URL https://maa.org/math
+-competitions/american-invitational-mathematics-examination-aime.
+OpenAI. Hello GPT-4o, 2024a. URL https://openai.com/index/hello-gpt-4o/.
+OpenAI. Learning to reason with llms, 2024b. URL https://openai.com/index/learnin
+g-to-reason-with-llms/.
+OpenAI. Introducing SimpleQA, 2024c. URL https://openai.com/index/introducing
+-simpleqa/.
+OpenAI. Introducing SWE-bench verified we’re releasing a human-validated subset of swe-
+bench that more, 2024d. URL https://openai.com/index/introducing-swe-bench
+-verified/.
+Qwen. Qwq: Reflect deeply on the boundaries of the unknown, 2024a. URL https://qwenlm
+.github.io/blog/qwq-32b-preview/.
+Qwen. Qwen2.5: A party of foundation models, 2024b. URL https://qwenlm.github.io/b
+log/qwen2.5.
+D. Rein, B. L. Hou, A. C. Stickland, J. Petty, R. Y. Pang, J. Dirani, J. Michael, and S. R. Bowman.
+GPQA: A graduate-level google-proof q&a benchmark. arXiv preprint arXiv:2311.12022, 2023.
+Z. Shao, P. Wang, Q. Zhu, R. Xu, J. Song, M. Zhang, Y. Li, Y. Wu, and D. Guo. Deepseekmath:
+Pushing the limits of mathematical reasoning in open language models. arXiv preprint
+arXiv:2402.03300, 2024.
+D. Silver, T. Hubert, J. Schrittwieser, I. Antonoglou, M. Lai, A. Guez, M. Lanctot, L. Sifre,
+D. Kumaran, T. Graepel, T. P. Lillicrap, K. Simonyan, and D. Hassabis. Mastering chess and
+shogi by self-play with a general reinforcement learning algorithm. CoRR, abs/1712.01815,
+2017a. URL http://arxiv.org/abs/1712.01815.
+18
+
+--- PAGE BREAK ---

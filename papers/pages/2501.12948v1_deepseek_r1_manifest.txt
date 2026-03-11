@@ -1,0 +1,13 @@
+PDF: papers/2501.12948v1_deepseek_r1.pdf
+Total pages: 22
+Pages per chunk: 3
+
+Chunks:
+  2501.12948v1_deepseek_r1_chunk_001.pdf: pages 1-3
+  2501.12948v1_deepseek_r1_chunk_002.pdf: pages 4-6
+  2501.12948v1_deepseek_r1_chunk_003.pdf: pages 7-9
+  2501.12948v1_deepseek_r1_chunk_004.pdf: pages 10-12
+  2501.12948v1_deepseek_r1_chunk_005.pdf: pages 13-15
+  2501.12948v1_deepseek_r1_chunk_006.pdf: pages 16-18
+  2501.12948v1_deepseek_r1_chunk_007.pdf: pages 19-21
+  2501.12948v1_deepseek_r1_chunk_008.pdf: page 22

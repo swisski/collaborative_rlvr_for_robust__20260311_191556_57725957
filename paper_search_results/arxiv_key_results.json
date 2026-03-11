@@ -1,0 +1,609 @@
+[
+  {
+    "arxiv_id": "2503.06749v4",
+    "title": "Vision-R1: Incentivizing Reasoning Capability in Multimodal Large Language Models",
+    "authors": [
+      "Wenxuan Huang",
+      "Bohan Jia",
+      "Zijie Zhai",
+      "Shaosheng Cao",
+      "Zheyu Ye"
+    ],
+    "year": "2025",
+    "abstract": "DeepSeek-R1-Zero has successfully demonstrated the emergence of reasoning capabilities in LLMs purely through Reinforcement Learning (RL). Inspired by this breakthrough, we explore how RL can be utilized to enhance the reasoning capability of MLLMs. However, direct training with RL struggles to activate complex reasoning capabilities such as questioning and reflection in MLLMs, due to the absence of substantial high-quality multimodal reasoning data. To address this issue, we propose the reasoni",
+    "url": "https://arxiv.org/abs/2503.06749v4"
+  },
+  {
+    "arxiv_id": "2503.21776v4",
+    "title": "Video-R1: Reinforcing Video Reasoning in MLLMs",
+    "authors": [
+      "Kaituo Feng",
+      "Kaixiong Gong",
+      "Bohao Li",
+      "Zonghao Guo",
+      "Yibing Wang"
+    ],
+    "year": "2025",
+    "abstract": "Inspired by DeepSeek-R1's success in eliciting reasoning abilities through rule-based reinforcement learning (RL), we introduce Video-R1 as the first attempt to systematically explore the R1 paradigm for incentivizing video reasoning within multimodal large language models (MLLMs). However, directly applying RL training with the GRPO algorithm to video reasoning presents two primary challenges: (i) a lack of temporal modeling for video reasoning, and (ii) the scarcity of high-quality video-reaso",
+    "url": "https://arxiv.org/abs/2503.21776v4"
+  },
+  {
+    "arxiv_id": "2505.24025v2",
+    "title": "DINO-R1: Incentivizing Reasoning Capability in Vision Foundation Models",
+    "authors": [
+      "Chenbin Pan",
+      "Wenbin He",
+      "Zhengzhong Tu",
+      "Liu Ren"
+    ],
+    "year": "2025",
+    "abstract": "The recent explosive interest in the reasoning capabilities of large language models, such as DeepSeek-R1, has demonstrated remarkable success through reinforcement learning-based fine-tuning frameworks, exemplified by methods like Group Relative Policy Optimization (GRPO). However, such reasoning abilities remain underexplored and notably absent in vision foundation models, including representation models like the DINO series. In this work, we propose \\textbf{DINO-R1}, the first such attempt to",
+    "url": "https://arxiv.org/abs/2505.24025v2"
+  },
+  {
+    "arxiv_id": "2502.19735v3",
+    "title": "R1-T1: Fully Incentivizing Translation Capability in LLMs via Reasoning Learning",
+    "authors": [
+      "Minggui He",
+      "Yilun Liu",
+      "Shimin Tao",
+      "Yuanchang Luo",
+      "Hongyong Zeng"
+    ],
+    "year": "2025",
+    "abstract": "Despite recent breakthroughs in reasoning-enhanced large language models (LLMs) like DeepSeek-R1, incorporating inference-time reasoning into machine translation (MT), where human translators naturally employ structured, multi-layered reasoning chain-of-thoughts (CoTs), is yet underexplored. Existing methods either design a fixed CoT tailored for a specific MT sub-task (e.g., literature translation), or rely on synthesizing CoTs unaligned with humans and supervised fine-tuning (SFT) prone to ove",
+    "url": "https://arxiv.org/abs/2502.19735v3"
+  },
+  {
+    "arxiv_id": "2505.14460v2",
+    "title": "VisualQuality-R1: Reasoning-Induced Image Quality Assessment via Reinforcement Learning to Rank",
+    "authors": [
+      "Tianhe Wu",
+      "Jian Zou",
+      "Jie Liang",
+      "Lei Zhang",
+      "Kede Ma"
+    ],
+    "year": "2025",
+    "abstract": "DeepSeek-R1 has demonstrated remarkable effectiveness in incentivizing reasoning and generalization capabilities of large language models (LLMs) through reinforcement learning. Nevertheless, the potential of reasoning-induced computation has not been thoroughly explored in the context of image quality assessment (IQA), a task depending critically on visual reasoning. In this paper, we introduce VisualQuality-R1, a reasoning-induced no-reference IQA (NR-IQA) model, and we train it with reinforcem",
+    "url": "https://arxiv.org/abs/2505.14460v2"
+  },
+  {
+    "arxiv_id": "2505.19094v2",
+    "title": "SATORI-R1: Incentivizing Multimodal Reasoning through Explicit Visual Anchoring",
+    "authors": [
+      "Chuming Shen",
+      "Wei Wei",
+      "Xiaoye Qu",
+      "Yu Cheng"
+    ],
+    "year": "2025",
+    "abstract": "DeepSeek-R1 has demonstrated powerful reasoning capabilities in the text domain through stable reinforcement learning (RL). Recently, in the multimodal domain, works have begun to directly apply RL to generate R1-like free-form reasoning for Visual Question Answering (VQA) tasks. However, multimodal tasks share an intrinsically different nature from textual tasks, which heavily rely on the understanding of the input image to solve the problem. Therefore, such free-form reasoning faces two critic",
+    "url": "https://arxiv.org/abs/2505.19094v2"
+  },
+  {
+    "arxiv_id": "2501.12948v2",
+    "title": "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning",
+    "authors": [
+      " DeepSeek-AI",
+      "Daya Guo",
+      "Dejian Yang",
+      "Haowei Zhang",
+      "Junxiao Song"
+    ],
+    "year": "2025",
+    "abstract": "General reasoning represents a long-standing and formidable challenge in artificial intelligence. Recent breakthroughs, exemplified by large language models (LLMs) and chain-of-thought prompting, have achieved considerable success on foundational reasoning tasks. However, this success is heavily contingent upon extensive human-annotated demonstrations, and models' capabilities are still insufficient for more complex problems. Here we show that the reasoning abilities of LLMs can be incentivized ",
+    "url": "https://arxiv.org/abs/2501.12948v2"
+  },
+  {
+    "arxiv_id": "2506.14245v2",
+    "title": "Reinforcement Learning with Verifiable Rewards Implicitly Incentivizes Correct Reasoning in Base LLMs",
+    "authors": [
+      "Xumeng Wen",
+      "Zihan Liu",
+      "Shun Zheng",
+      "Shengyu Ye",
+      "Zhirong Wu"
+    ],
+    "year": "2025",
+    "abstract": "Recent advancements in long chain-of-thought (CoT) reasoning, particularly through the Group Relative Policy Optimization algorithm used by DeepSeek-R1, have led to significant interest in the potential of Reinforcement Learning with Verifiable Rewards (RLVR) for Large Language Models (LLMs). While RLVR promises to improve reasoning by allowing models to learn from free exploration, there remains debate over whether it truly enhances reasoning abilities or simply boosts sampling efficiency. This",
+    "url": "https://arxiv.org/abs/2506.14245v2"
+  },
+  {
+    "arxiv_id": "2506.01369v2",
+    "title": "Incentivizing LLMs to Self-Verify Their Answers",
+    "authors": [
+      "Fuxiang Zhang",
+      "Jiacheng Xu",
+      "Chaojie Wang",
+      "Ce Cui",
+      "Yang Liu"
+    ],
+    "year": "2025",
+    "abstract": "Large Language Models (LLMs) have demonstrated remarkable progress in complex reasoning tasks through both post-training and test-time scaling laws. While prevalent test-time scaling approaches are often realized by using external reward models to guide the model generation process, we find that only marginal gains can be acquired when scaling a model post-trained on specific reasoning tasks. We identify that the limited improvement stems from distribution discrepancies between the specific post",
+    "url": "https://arxiv.org/abs/2506.01369v2"
+  },
+  {
+    "arxiv_id": "2506.04207v2",
+    "title": "Advancing Multimodal Reasoning: From Optimized Cold Start to Staged Reinforcement Learning",
+    "authors": [
+      "Shuang Chen",
+      "Yue Guo",
+      "Zhaochen Su",
+      "Yafu Li",
+      "Yulun Wu"
+    ],
+    "year": "2025",
+    "abstract": "Inspired by the remarkable reasoning capabilities of Deepseek-R1 in complex textual tasks, many works attempt to incentivize similar capabilities in Multimodal Large Language Models (MLLMs) by directly applying reinforcement learning (RL). However, they still struggle to activate complex reasoning. In this paper, rather than examining multimodal RL in isolation, we delve into current training pipelines and identify three crucial phenomena: 1) Effective cold start initialization is critical for e",
+    "url": "https://arxiv.org/abs/2506.04207v2"
+  },
+  {
+    "arxiv_id": "2503.08679v4",
+    "title": "Chain-of-Thought Reasoning In The Wild Is Not Always Faithful",
+    "authors": [
+      "Iv\u00e1n Arcuschin",
+      "Jett Janiak",
+      "Robert Krzyzanowski",
+      "Senthooran Rajamanoharan",
+      "Neel Nanda"
+    ],
+    "year": "2025",
+    "abstract": "Chain-of-Thought (CoT) reasoning has significantly advanced state-of-the-art AI capabilities. However, recent studies have shown that CoT reasoning is not always faithful when models face an explicit bias in their prompts, i.e., the CoT can give an incorrect picture of how models arrive at conclusions. We go further and show that unfaithful CoT can also occur on realistic prompts with no artificial bias. We find that when separately presented with the questions \"Is X bigger than Y?\" and \"Is Y bi",
+    "url": "https://arxiv.org/abs/2503.08679v4"
+  },
+  {
+    "arxiv_id": "2405.18357v2",
+    "title": "Faithful Logical Reasoning via Symbolic Chain-of-Thought",
+    "authors": [
+      "Jundong Xu",
+      "Hao Fei",
+      "Liangming Pan",
+      "Qian Liu",
+      "Mong-Li Lee"
+    ],
+    "year": "2024",
+    "abstract": "While the recent Chain-of-Thought (CoT) technique enhances the reasoning ability of large language models (LLMs) with the theory of mind, it might still struggle in handling logical reasoning that relies much on symbolic expressions and rigid deducing rules. To strengthen the logical reasoning capability of LLMs, we propose a novel Symbolic Chain-of-Thought, namely SymbCoT, a fully LLM-based framework that integrates symbolic expressions and logic rules with CoT prompting. Technically, building ",
+    "url": "https://arxiv.org/abs/2405.18357v2"
+  },
+  {
+    "arxiv_id": "2307.13702v1",
+    "title": "Measuring Faithfulness in Chain-of-Thought Reasoning",
+    "authors": [
+      "Tamera Lanham",
+      "Anna Chen",
+      "Ansh Radhakrishnan",
+      "Benoit Steiner",
+      "Carson Denison"
+    ],
+    "year": "2023",
+    "abstract": "Large language models (LLMs) perform better when they produce step-by-step, \"Chain-of-Thought\" (CoT) reasoning before answering a question, but it is unclear if the stated reasoning is a faithful explanation of the model's actual reasoning (i.e., its process for answering the question). We investigate hypotheses for how CoT reasoning may be unfaithful, by examining how the model predictions change when we intervene on the CoT (e.g., by adding mistakes or paraphrasing it). Models show large varia",
+    "url": "https://arxiv.org/abs/2307.13702v1"
+  },
+  {
+    "arxiv_id": "2405.15092v2",
+    "title": "Dissociation of Faithful and Unfaithful Reasoning in LLMs",
+    "authors": [
+      "Evelyn Yee",
+      "Alice Li",
+      "Chenyu Tang",
+      "Yeon Ho Jung",
+      "Ramamohan Paturi"
+    ],
+    "year": "2024",
+    "abstract": "Large language models (LLMs) often improve their performance in downstream tasks when they generate Chain of Thought reasoning text before producing an answer. We investigate how LLMs recover from errors in Chain of Thought. Through analysis of error recovery behaviors, we find evidence for unfaithfulness in Chain of Thought, which occurs when models arrive at the correct answer despite invalid reasoning text. We identify factors that shift LLM recovery behavior: LLMs recover more frequently fro",
+    "url": "https://arxiv.org/abs/2405.15092v2"
+  },
+  {
+    "arxiv_id": "2512.22631v1",
+    "title": "Evaluating GRPO and DPO for Faithful Chain-of-Thought Reasoning in LLMs",
+    "authors": [
+      "Hadi Mohammadi",
+      "Tamas Kozak",
+      "Anastasia Giachanou"
+    ],
+    "year": "2025",
+    "abstract": "Chain-of-thought (CoT) reasoning has emerged as a powerful technique for improving the problem-solving capabilities of large language models (LLMs), particularly for tasks requiring multi-step reasoning. However, recent studies show that CoT explanations often fail to reflect the model's actual reasoning process, as models may produce coherent yet misleading justifications or modify answers without acknowledging external cues. Such discrepancies undermine the reliability of CoT-based methods for",
+    "url": "https://arxiv.org/abs/2512.22631v1"
+  },
+  {
+    "arxiv_id": "2603.05167v1",
+    "title": "C2-Faith: Benchmarking LLM Judges for Causal and Coverage Faithfulness in Chain-of-Thought Reasoning",
+    "authors": [
+      "Avni Mittal",
+      "Rauno Arike"
+    ],
+    "year": "2026",
+    "abstract": "Large language models (LLMs) are increasingly used as judges of chain-of-thought (CoT) reasoning, but it remains unclear whether they can reliably assess process faithfulness rather than just answer plausibility. We introduce C2-Faith, a benchmark built from PRM800K that targets two complementary dimensions of faithfulness: causality (does each step logically follow from prior context?) and coverage (are essential intermediate inferences present?). Using controlled perturbations, we create examp",
+    "url": "https://arxiv.org/abs/2603.05167v1"
+  },
+  {
+    "arxiv_id": "2406.10625v2",
+    "title": "On the Hardness of Faithful Chain-of-Thought Reasoning in Large Language Models",
+    "authors": [
+      "Sree Harsha Tanneru",
+      "Dan Ley",
+      "Chirag Agarwal",
+      "Himabindu Lakkaraju"
+    ],
+    "year": "2024",
+    "abstract": "As Large Language Models (LLMs) are increasingly being employed in real-world applications in critical domains such as healthcare, it is important to ensure that the Chain-of-Thought (CoT) reasoning generated by these models faithfully captures their underlying behavior.   While LLMs are known to generate CoT reasoning that is appealing to humans, prior studies have shown that these explanations do not accurately reflect the actual behavior of the underlying LLMs. In this work, we explore the pr",
+    "url": "https://arxiv.org/abs/2406.10625v2"
+  },
+  {
+    "arxiv_id": "2510.04040v2",
+    "title": "FaithCoT-Bench: Benchmarking Instance-Level Faithfulness of Chain-of-Thought Reasoning",
+    "authors": [
+      "Xu Shen",
+      "Song Wang",
+      "Zhen Tan",
+      "Laura Yao",
+      "Xinyu Zhao"
+    ],
+    "year": "2025",
+    "abstract": "Large language models (LLMs) increasingly rely on Chain-of-Thought (CoT) prompting to improve problem-solving and provide seemingly transparent explanations. However, growing evidence shows that CoT often fail to faithfully represent the underlying reasoning process, raising concerns about their reliability in high-risk applications. Although prior studies have focused on mechanism-level analyses showing that CoTs can be unfaithful, they leave open the practical challenge of deciding whether a s",
+    "url": "https://arxiv.org/abs/2510.04040v2"
+  },
+  {
+    "arxiv_id": "2410.10336v2",
+    "title": "CoMAT: Chain of Mathematically Annotated Thought Improves Mathematical Reasoning",
+    "authors": [
+      "Joshua Ong Jun Leang",
+      "Aryo Pradipta Gema",
+      "Shay B. Cohen"
+    ],
+    "year": "2024",
+    "abstract": "Mathematical reasoning remains a significant challenge for large language models (LLMs), despite progress in prompting techniques such as Chain-of-Thought (CoT). We present **Chain of Mathematically Annotated Thought (CoMAT)**, which enhances reasoning through two stages: *Symbolic Conversion* (converting natural language queries into symbolic form) and *Reasoning Execution* (deriving answers from symbolic representations). CoMAT operates entirely with a single LLM and without external solvers. ",
+    "url": "https://arxiv.org/abs/2410.10336v2"
+  },
+  {
+    "arxiv_id": "2602.20710v1",
+    "title": "Counterfactual Simulation Training for Chain-of-Thought Faithfulness",
+    "authors": [
+      "Peter Hase",
+      "Christopher Potts"
+    ],
+    "year": "2026",
+    "abstract": "Inspecting Chain-of-Thought reasoning is among the most common means of understanding why an LLM produced its output. But well-known problems with CoT faithfulness severely limit what insights can be gained from this practice. In this paper, we introduce a training method called Counterfactual Simulation Training (CST), which aims to improve CoT faithfulness by rewarding CoTs that enable a simulator to accurately predict a model's outputs over counterfactual inputs. We apply CST in two settings:",
+    "url": "https://arxiv.org/abs/2602.20710v1"
+  },
+  {
+    "arxiv_id": "2510.22967v2",
+    "title": "MAD-Fact: A Multi-Agent Debate Framework for Long-Form Factuality Evaluation in LLMs",
+    "authors": [
+      "Yucheng Ning",
+      "Xixun Lin",
+      "Fang Fang",
+      "Yanan Cao"
+    ],
+    "year": "2025",
+    "abstract": "The widespread adoption of Large Language Models (LLMs) raises critical concerns about the factual accuracy of their outputs, especially in high-risk domains such as biomedicine, law, and education. Existing evaluation methods for short texts often fail on long-form content due to complex reasoning chains, intertwined perspectives, and cumulative information. To address this, we propose a systematic approach integrating large-scale long-form datasets, multi-agent verification mechanisms, and wei",
+    "url": "https://arxiv.org/abs/2510.22967v2"
+  },
+  {
+    "arxiv_id": "2406.11776v1",
+    "title": "Improving Multi-Agent Debate with Sparse Communication Topology",
+    "authors": [
+      "Yunxuan Li",
+      "Yibing Du",
+      "Jiageng Zhang",
+      "Le Hou",
+      "Peter Grabowski"
+    ],
+    "year": "2024",
+    "abstract": "Multi-agent debate has proven effective in improving large language models quality for reasoning and factuality tasks. While various role-playing strategies in multi-agent debates have been explored, in terms of the communication among agents, existing approaches adopt a brute force algorithm -- each agent can communicate with all other agents. In this paper, we systematically investigate the effect of communication connectivity in multi-agent systems. Our experiments on GPT and Mistral models r",
+    "url": "https://arxiv.org/abs/2406.11776v1"
+  },
+  {
+    "arxiv_id": "2410.12853v2",
+    "title": "Diversity of Thought Elicits Stronger Reasoning Capabilities in Multi-Agent Debate Frameworks",
+    "authors": [
+      "Mahmood Hegazy"
+    ],
+    "year": "2024",
+    "abstract": "Large language models (LLMs) excel in natural language generation but often confidently produce incorrect responses, especially in tasks like mathematical reasoning. Chain-of-thought prompting, self-verification, and multi-agent debate are among the strategies proposed to improve the reasoning and factual accuracy of LLMs. Building on Du et al.'s multi-agent debate framework, we find that multi-agent debate helps at any model scale, and that diversity of thought elicits stronger reasoning in deb",
+    "url": "https://arxiv.org/abs/2410.12853v2"
+  },
+  {
+    "arxiv_id": "2505.18596v4",
+    "title": "Debate-to-Detect: Reformulating Misinformation Detection as a Real-World Debate with Large Language Models",
+    "authors": [
+      "Chen Han",
+      "Wenzhen Zheng",
+      "Xijin Tang"
+    ],
+    "year": "2025",
+    "abstract": "The proliferation of misinformation in digital platforms reveals the limitations of traditional detection methods, which mostly rely on static classification and fail to capture the intricate process of real-world fact-checking. Despite advancements in Large Language Models (LLMs) that enhance automated reasoning, their application to misinformation detection remains hindered by issues of logical inconsistency and superficial verification. In response, we introduce Debate-to-Detect (D2D), a nove",
+    "url": "https://arxiv.org/abs/2505.18596v4"
+  },
+  {
+    "arxiv_id": "2601.04742v1",
+    "title": "Tool-MAD: A Multi-Agent Debate Framework for Fact Verification with Diverse Tool Augmentation and Adaptive Retrieval",
+    "authors": [
+      "Seyeon Jeong",
+      "Yeonjun Choi",
+      "JongWook Kim",
+      "Beakcheol Jang"
+    ],
+    "year": "2026",
+    "abstract": "Large Language Models (LLMs) suffer from hallucinations and factual inaccuracies, especially in complex reasoning and fact verification tasks. Multi-Agent Debate (MAD) systems aim to improve answer accuracy by enabling multiple LLM agents to engage in dialogue, promoting diverse reasoning and mutual verification. However, existing MAD frameworks primarily rely on internal knowledge or static documents, making them vulnerable to hallucinations. While MADKE introduces external evidence to mitigate",
+    "url": "https://arxiv.org/abs/2601.04742v1"
+  },
+  {
+    "arxiv_id": "2502.08788v3",
+    "title": "Stop Overvaluing Multi-Agent Debate -- We Must Rethink Evaluation and Embrace Model Heterogeneity",
+    "authors": [
+      "Hangfan Zhang",
+      "Zhiyao Cui",
+      "Jianhao Chen",
+      "Xinrun Wang",
+      "Qiaosheng Zhang"
+    ],
+    "year": "2025",
+    "abstract": "Multi-agent debate (MAD) has gained significant attention as a promising line of research to improve the factual accuracy and reasoning capabilities of large language models (LLMs). Despite its conceptual appeal, current MAD research suffers from critical limitations in evaluation practices, including limited benchmark coverage, weak baseline comparisons, and inconsistent setups. This paper presents a systematic evaluation of 5 representative MAD methods across 9 benchmarks using 4 foundational ",
+    "url": "https://arxiv.org/abs/2502.08788v3"
+  },
+  {
+    "arxiv_id": "2504.00374v1",
+    "title": "When Persuasion Overrides Truth in Multi-Agent LLM Debates: Introducing a Confidence-Weighted Persuasion Override Rate (CW-POR)",
+    "authors": [
+      "Mahak Agarwal",
+      "Divyam Khanna"
+    ],
+    "year": "2025",
+    "abstract": "In many real-world scenarios, a single Large Language Model (LLM) may encounter contradictory claims-some accurate, others forcefully incorrect-and must judge which is true. We investigate this risk in a single-turn, multi-agent debate framework: one LLM-based agent provides a factual answer from TruthfulQA, another vigorously defends a falsehood, and the same LLM architecture serves as judge. We introduce the Confidence-Weighted Persuasion Override Rate (CW-POR), which captures not only how oft",
+    "url": "https://arxiv.org/abs/2504.00374v1"
+  },
+  {
+    "arxiv_id": "2512.23518v1",
+    "title": "Single LLM Debate, MoLaCE: Mixture of Latent Concept Experts Against Confirmation Bias",
+    "authors": [
+      "Hazel Kim",
+      "Philip Torr"
+    ],
+    "year": "2025",
+    "abstract": "Large language models (LLMs) are highly vulnerable to input confirmation bias. When a prompt implies a preferred answer, models often reinforce that bias rather than explore alternatives. This phenomenon remains underexplored, yet it is already harmful in base models and poses an even greater risk in multi-agent debate, where echo chambers reinforce bias instead of correction. We introduce Mixture of Latent Concept Experts (MoLaCE), a lightweight inference-time framework that addresses confirmat",
+    "url": "https://arxiv.org/abs/2512.23518v1"
+  },
+  {
+    "arxiv_id": "2506.06020v1",
+    "title": "When to Trust Context: Self-Reflective Debates for Context Reliability",
+    "authors": [
+      "Zeqi Zhou",
+      "Fang Wu",
+      "Shayan Talaei",
+      "Haokai Zhao",
+      "Cheng Meixin"
+    ],
+    "year": "2025",
+    "abstract": "Large language models frequently encounter conflicts between their parametric knowledge and contextual input, often resulting in factual inconsistencies or hallucinations. We propose Self-Reflective Debate for Contextual Reliability (SR-DCR), a lightweight framework that integrates token-level self-confidence with an asymmetric multi-agent debate to adjudicate such conflicts. A critic, deprived of context, challenges a defender who argues from the given passage; a judge model evaluates the debat",
+    "url": "https://arxiv.org/abs/2506.06020v1"
+  },
+  {
+    "arxiv_id": "2511.11182v1",
+    "title": "Multi-agent Undercover Gaming: Hallucination Removal via Counterfactual Test for Multimodal Reasoning",
+    "authors": [
+      "Dayong Liang",
+      "Xiao-Yong Wei",
+      "Changmeng Zheng"
+    ],
+    "year": "2025",
+    "abstract": "Hallucination continues to pose a major obstacle in the reasoning capabilities of large language models (LLMs). Although the Multi-Agent Debate (MAD) paradigm offers a promising solution by promoting consensus among multiple agents to enhance reliability, it relies on the unrealistic assumption that all debaters are rational and reflective, which is a condition that may not hold when agents themselves are prone to hallucinations. To address this gap, we introduce the Multi-agent Undercover Gamin",
+    "url": "https://arxiv.org/abs/2511.11182v1"
+  },
+  {
+    "arxiv_id": "2410.05229v2",
+    "title": "GSM-Symbolic: Understanding the Limitations of Mathematical Reasoning in Large Language Models",
+    "authors": [
+      "Iman Mirzadeh",
+      "Keivan Alizadeh",
+      "Hooman Shahrokhi",
+      "Oncel Tuzel",
+      "Samy Bengio"
+    ],
+    "year": "2024",
+    "abstract": "Recent advancements in Large Language Models (LLMs) have sparked interest in their formal reasoning capabilities, particularly in mathematics. The GSM8K benchmark is widely used to assess the mathematical reasoning of models on grade-school-level questions. While the performance of LLMs on GSM8K has significantly improved in recent years, it remains unclear whether their mathematical reasoning capabilities have genuinely advanced, raising questions about the reliability of the reported metrics. ",
+    "url": "https://arxiv.org/abs/2410.05229v2"
+  },
+  {
+    "arxiv_id": "2506.03763v1",
+    "title": "ClozeMath: Improving Mathematical Reasoning in Language Models by Learning to Fill Equations",
+    "authors": [
+      "Quang Hieu Pham",
+      "Thuy Duong Nguyen",
+      "Tung Pham",
+      "Anh Tuan Luu",
+      "Dat Quoc Nguyen"
+    ],
+    "year": "2025",
+    "abstract": "The capabilities of large language models (LLMs) have been enhanced by training on data that reflects human thought processes, such as the Chain-of-Thought format. However, evidence suggests that the conventional scheme of next-word prediction may not fully capture how humans learn to think. Inspired by how humans generalize mathematical reasoning, we propose a new approach named ClozeMath to fine-tune LLMs for mathematical reasoning. Our ClozeMath involves a text-infilling task that predicts ma",
+    "url": "https://arxiv.org/abs/2506.03763v1"
+  },
+  {
+    "arxiv_id": "2402.17231v3",
+    "title": "MATHSENSEI: A Tool-Augmented Large Language Model for Mathematical Reasoning",
+    "authors": [
+      "Debrup Das",
+      "Debopriyo Banerjee",
+      "Somak Aditya",
+      "Ashish Kulkarni"
+    ],
+    "year": "2024",
+    "abstract": "Tool-augmented Large Language Models (TALMs) are known to enhance the skillset of large language models (LLMs), thereby, leading to their improved reasoning abilities across many tasks. While, TALMs have been successfully employed in different question-answering benchmarks, their efficacy on complex mathematical reasoning benchmarks, and the potential complementary benefits offered by tools for knowledge retrieval and mathematical equation solving are open research questions. In this work, we pr",
+    "url": "https://arxiv.org/abs/2402.17231v3"
+  },
+  {
+    "arxiv_id": "2601.21225v1",
+    "title": "MGSM-Pro: A Simple Strategy for Robust Multilingual Mathematical Reasoning Evaluation",
+    "authors": [
+      "Tianyi Xu",
+      "Kosei Uemura",
+      "Alfred Malengo Kondoro",
+      "Tadesse Destaw Belay",
+      "Catherine Nana Nyaah Essuman"
+    ],
+    "year": "2026",
+    "abstract": "Large language models have made substantial progress in mathematical reasoning. However, benchmark development for multilingual evaluation has lagged behind English in both difficulty and recency. Recently, GSM-Symbolic showed a strong evidence of high variance when models are evaluated on different instantiations of the same question; however, the evaluation was conducted only in English. In this paper, we introduce MGSM-Pro, an extension of MGSM dataset with GSM-Symbolic approach. Our dataset ",
+    "url": "https://arxiv.org/abs/2601.21225v1"
+  },
+  {
+    "arxiv_id": "2506.07751v4",
+    "title": "AbstRaL: Augmenting LLMs' Reasoning by Reinforcing Abstract Thinking",
+    "authors": [
+      "Silin Gao",
+      "Antoine Bosselut",
+      "Samy Bengio",
+      "Emmanuel Abbe"
+    ],
+    "year": "2025",
+    "abstract": "Recent studies have shown that large language models (LLMs), especially smaller ones, often lack robustness in grade school math (GSM) reasoning. In particular, they tend to experience performance drops when faced with distribution shifts, such as changes to numerical or nominal variables, or insertions of distracting clauses. A possible strategy to address this involves generating synthetic data to further \"instantiate\" reasoning problems on potential variations. In this work, we instead focus ",
+    "url": "https://arxiv.org/abs/2506.07751v4"
+  },
+  {
+    "arxiv_id": "2504.03790v2",
+    "title": "Sample, Don't Search: Rethinking Test-Time Alignment for Language Models",
+    "authors": [
+      "Gon\u00e7alo Faria",
+      "Noah A. Smith"
+    ],
+    "year": "2025",
+    "abstract": "Increasing test-time computation has emerged as a promising direction for improving language model performance, particularly in scenarios where model finetuning is impractical or impossible due to computational constraints or private model weights. However, existing test-time search methods using a reward model (RM) often degrade in quality as compute scales, due to the over-optimization of what are inherently imperfect reward proxies. We introduce QAlign, a new test-time alignment approach. As ",
+    "url": "https://arxiv.org/abs/2504.03790v2"
+  },
+  {
+    "arxiv_id": "2506.16141v1",
+    "title": "GRPO-CARE: Consistency-Aware Reinforcement Learning for Multimodal Reasoning",
+    "authors": [
+      "Yi Chen",
+      "Yuying Ge",
+      "Rui Wang",
+      "Yixiao Ge",
+      "Junhao Cheng"
+    ],
+    "year": "2025",
+    "abstract": "Recent reinforcement learning approaches, such as outcome-supervised GRPO, have advanced Chain-of-Thought reasoning in large language models (LLMs), yet their adaptation to multimodal LLMs (MLLMs) is unexplored. To address the lack of rigorous evaluation for MLLM post-training methods, we introduce SEED-Bench-R1, a benchmark with complex real-world videos requiring balanced perception and reasoning. It offers a large training set and evaluates generalization across three escalating challenges: i",
+    "url": "https://arxiv.org/abs/2506.16141v1"
+  },
+  {
+    "arxiv_id": "2508.20751v1",
+    "title": "Pref-GRPO: Pairwise Preference Reward-based GRPO for Stable Text-to-Image Reinforcement Learning",
+    "authors": [
+      "Yibin Wang",
+      "Zhimin Li",
+      "Yuhang Zang",
+      "Yujie Zhou",
+      "Jiazi Bu"
+    ],
+    "year": "2025",
+    "abstract": "Recent advancements highlight the importance of GRPO-based reinforcement learning methods and benchmarking in enhancing text-to-image (T2I) generation. However, current methods using pointwise reward models (RM) for scoring generated images are susceptible to reward hacking. We reveal that this happens when minimal score differences between images are amplified after normalization, creating illusory advantages that drive the model to over-optimize for trivial gains, ultimately destabilizing the ",
+    "url": "https://arxiv.org/abs/2508.20751v1"
+  },
+  {
+    "arxiv_id": "2601.19280v1",
+    "title": "Group Distributionally Robust Optimization-Driven Reinforcement Learning for LLM Reasoning",
+    "authors": [
+      "Kishan Panaganti",
+      "Zhenwen Liang",
+      "Wenhao Yu",
+      "Haitao Mi",
+      "Dong Yu"
+    ],
+    "year": "2026",
+    "abstract": "Recent progress in Large Language Model (LLM) reasoning is increasingly driven by the refinement of post-training loss functions and alignment strategies. However, standard Reinforcement Learning (RL) paradigms like Group Relative Policy Optimization (GRPO) remain constrained by static uniformity: uniform prompt sampling and a fixed number of rollouts per prompt. For heterogeneous, heavy-tailed reasoning data, this creates structural inefficiencies that waste compute on already-solved patterns w",
+    "url": "https://arxiv.org/abs/2601.19280v1"
+  },
+  {
+    "arxiv_id": "2510.14256v3",
+    "title": "Identity-GRPO: Optimizing Multi-Human Identity-preserving Video Generation via Reinforcement Learning",
+    "authors": [
+      "Xiangyu Meng",
+      "Zixian Zhang",
+      "Zhenghao Zhang",
+      "Junchao Liao",
+      "Long Qin"
+    ],
+    "year": "2025",
+    "abstract": "While advanced methods like VACE and Phantom have advanced video generation for specific subjects in diverse scenarios, they struggle with multi-human identity preservation in dynamic interactions, where consistent identities across multiple characters are critical. To address this, we propose Identity-GRPO, a human feedback-driven optimization pipeline for refining multi-human identity-preserving video generation. First, we construct a video reward model trained on a large-scale preference data",
+    "url": "https://arxiv.org/abs/2510.14256v3"
+  },
+  {
+    "arxiv_id": "2510.19807v2",
+    "title": "Scaf-GRPO: Scaffolded Group Relative Policy Optimization for Enhancing LLM Reasoning",
+    "authors": [
+      "Xichen Zhang",
+      "Sitong Wu",
+      "Yinghao Zhu",
+      "Haoru Tan",
+      "Shaozuo Yu"
+    ],
+    "year": "2025",
+    "abstract": "Reinforcement learning from verifiable rewards has emerged as a powerful technique for enhancing the complex reasoning abilities of Large Language Models (LLMs). However, these methods are fundamentally constrained by the ''learning cliff'' phenomenon: when faced with problems far beyond their current capabilities, models consistently fail, yielding a persistent zero-reward signal. In policy optimization algorithms like GRPO, this collapses the advantage calculation to zero, rendering these diff",
+    "url": "https://arxiv.org/abs/2510.19807v2"
+  },
+  {
+    "arxiv_id": "2511.15256v1",
+    "title": "GRPO-RM: Fine-Tuning Representation Models via GRPO-Driven Reinforcement Learning",
+    "authors": [
+      "Yanchen Xu",
+      "Ziheng Jiao",
+      "Hongyuan Zhang",
+      "Xuelong Li"
+    ],
+    "year": "2025",
+    "abstract": "The Group Relative Policy Optimization (GRPO), a reinforcement learning method used to fine-tune large language models (LLMs), has proved its effectiveness in practical applications such as DeepSeek-R1. It raises a question whether GRPO can be generalized to representation learning models. In this paper, we propose Group Relative Policy Optimization for Representation Model (GRPO-RM), and investigate the performance of GRPO-like policy in post-training representation models. Specifically, our me",
+    "url": "https://arxiv.org/abs/2511.15256v1"
+  },
+  {
+    "arxiv_id": "2510.22319v2",
+    "title": "GRPO-Guard: Mitigating Implicit Over-Optimization in Flow Matching via Regulated Clipping",
+    "authors": [
+      "Jing Wang",
+      "Jiajun Liang",
+      "Jie Liu",
+      "Henglin Liu",
+      "Gongye Liu"
+    ],
+    "year": "2025",
+    "abstract": "Recently, GRPO-based reinforcement learning has shown remarkable progress in optimizing flow-matching models, effectively improving their alignment with task-specific rewards. Within these frameworks, the policy update relies on importance-ratio clipping to constrain overconfident positive and negative gradients. However, in practice, we observe a systematic shift in the importance-ratio distribution-its mean falls below 1 and its variance differs substantially across timesteps. This left-shifte",
+    "url": "https://arxiv.org/abs/2510.22319v2"
+  },
+  {
+    "arxiv_id": "2603.01106v1",
+    "title": "DIVA-GRPO: Enhancing Multimodal Reasoning through Difficulty-Adaptive Variant Advantage",
+    "authors": [
+      "Haowen Gao",
+      "Zhenyu Zhang",
+      "Liang Pang",
+      "Fangda Guo",
+      "Hongjian Dou"
+    ],
+    "year": "2026",
+    "abstract": "Reinforcement learning (RL) with group relative policy optimization (GRPO) has become a widely adopted approach for enhancing the reasoning capabilities of multimodal large language models (MLLMs). While GRPO enables long-chain reasoning without a critic, it often suffers from sparse rewards on difficult problems and advantage vanishing when group-level rewards are too consistent for overly easy or hard problems. Existing solutions (sample expansion, selective utilization, and indirect reward de",
+    "url": "https://arxiv.org/abs/2603.01106v1"
+  },
+  {
+    "arxiv_id": "2508.02833v4",
+    "title": "TIC-GRPO: Provable and Efficient Optimization for Reinforcement Learning from Human Feedback",
+    "authors": [
+      "Lei Pang",
+      "Jun Luo",
+      "Ruinan Jin"
+    ],
+    "year": "2025",
+    "abstract": "Group Relative Policy Optimization (GRPO), recently introduced by DeepSeek, is a critic-free reinforcement learning algorithm for fine-tuning large language models. GRPO replaces the value function in Proximal Policy Optimization (PPO) with group-normalized rewards while retaining PPO-style token-level importance sampling based on an old policy. Our theoretical analysis reveals that the GRPO update rule estimates the policy gradient at the old policy rather than the current one; however, since t",
+    "url": "https://arxiv.org/abs/2508.02833v4"
+  },
+  {
+    "arxiv_id": "2511.03527v1",
+    "title": "Learning Without Critics? Revisiting GRPO in Classical Reinforcement Learning Environments",
+    "authors": [
+      "Bryan L. M. de Oliveira",
+      "Felipe V. Frujeri",
+      "Marcos P. C. M. Queiroz",
+      "Luana G. B. Martins",
+      "Telma W. de L. Soares"
+    ],
+    "year": "2025",
+    "abstract": "Group Relative Policy Optimization (GRPO) has emerged as a scalable alternative to Proximal Policy Optimization (PPO) by eliminating the learned critic and instead estimating advantages through group-relative comparisons of trajectories. This simplification raises fundamental questions about the necessity of learned baselines in policy-gradient methods. We present the first systematic study of GRPO in classical single-task reinforcement learning environments, spanning discrete and continuous con",
+    "url": "https://arxiv.org/abs/2511.03527v1"
+  }
+]

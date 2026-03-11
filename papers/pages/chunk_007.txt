@@ -1,0 +1,229 @@
+D. Silver, J. Schrittwieser, K. Simonyan, I. Antonoglou, A. Huang, A. Guez, T. Hubert, L. Baker,
+M. Lai, A. Bolton, Y. Chen, T. P. Lillicrap, F. Hui, L. Sifre, G. van den Driessche, T. Graepel, and
+D. Hassabis. Mastering the game of go without human knowledge. Nat., 550(7676):354–359,
+2017b. doi: 10.1038/NATURE24270. URL https://doi.org/10.1038/nature24270.
+C. Snell, J. Lee, K. Xu, and A. Kumar. Scaling llm test-time compute optimally can be more
+effective than scaling model parameters, 2024. URL https://arxiv.org/abs/2408.033
+14.
+T. Trinh, Y. Wu, Q. Le, H. He, and T. Luong. Solving olympiad geometry without human
+demonstrations. Nature, 2024. doi: 10.1038/s41586-023-06747-5.
+J. Uesato, N. Kushman, R. Kumar, F. Song, N. Siegel, L. Wang, A. Creswell, G. Irving, and
+I. Higgins. Solving math word problems with process-and outcome-based feedback. arXiv
+preprint arXiv:2211.14275, 2022.
+P. Wang, L. Li, Z. Shao, R. Xu, D. Dai, Y. Li, D. Chen, Y. Wu, and Z. Sui. Math-shepherd: A label-
+free step-by-step verifier for llms in mathematical reasoning. arXiv preprint arXiv:2312.08935,
+2023.
+X. Wang, J. Wei, D. Schuurmans, Q. Le, E. Chi, S. Narang, A. Chowdhery, and D. Zhou.
+Self-consistency improves chain of thought reasoning in language models. arXiv preprint
+arXiv:2203.11171, 2022.
+Y. Wang, X. Ma, G. Zhang, Y. Ni, A. Chandra, S. Guo, W. Ren, A. Arulraj, X. He, Z. Jiang, T. Li,
+M. Ku, K. Wang, A. Zhuang, R. Fan, X. Yue, and W. Chen. Mmlu-pro: A more robust and
+challenging multi-task language understanding benchmark. CoRR, abs/2406.01574, 2024.
+URL https://doi.org/10.48550/arXiv.2406.01574.
+C. S. Xia, Y. Deng, S. Dunn, and L. Zhang.
+Agentless: Demystifying llm-based software
+engineering agents. arXiv preprint, 2024.
+H. Xin, Z. Z. Ren, J. Song, Z. Shao, W. Zhao, H. Wang, B. Liu, L. Zhang, X. Lu, Q. Du, W. Gao,
+Q. Zhu, D. Yang, Z. Gou, Z. F. Wu, F. Luo, and C. Ruan. Deepseek-prover-v1.5: Harnessing
+proof assistant feedback for reinforcement learning and monte-carlo tree search, 2024. URL
+https://arxiv.org/abs/2408.08152.
+J. Zhou, T. Lu, S. Mishra, S. Brahma, S. Basu, Y. Luan, D. Zhou, and L. Hou. Instruction-following
+evaluation for large language models. arXiv preprint arXiv:2311.07911, 2023.
+19
+
+--- PAGE BREAK ---
+Appendix
+A. Contributions and Acknowledgments
+Core Contributors
+Daya Guo
+Dejian Yang
+Haowei Zhang
+Junxiao Song
+Ruoyu Zhang
+Runxin Xu
+Qihao Zhu
+Shirong Ma
+Peiyi Wang
+Xiao Bi
+Xiaokang Zhang
+Xingkai Yu
+Yu Wu
+Z.F. Wu
+Zhibin Gou
+Zhihong Shao
+Zhuoshu Li
+Ziyi Gao
+Contributors
+Aixin Liu
+Bing Xue
+Bingxuan Wang
+Bochao Wu
+Bei Feng
+Chengda Lu
+Chenggang Zhao
+Chengqi Deng
+Chong Ruan
+Damai Dai
+Deli Chen
+Dongjie Ji
+Erhang Li
+Fangyun Lin
+Fucong Dai
+Fuli Luo*
+Guangbo Hao
+Guanting Chen
+Guowei Li
+H. Zhang
+Hanwei Xu
+Honghui Ding
+Huazuo Gao
+Hui Qu
+Hui Li
+Jianzhong Guo
+Jiashi Li
+Jingchang Chen
+Jingyang Yuan
+Jinhao Tu
+Junjie Qiu
+Junlong Li
+J.L. Cai
+Jiaqi Ni
+Jian Liang
+Jin Chen
+Kai Dong
+Kai Hu*
+Kaichao You
+Kaige Gao
+Kang Guan
+Kexin Huang
+Kuai Yu
+Lean Wang
+Lecong Zhang
+Liang Zhao
+Litong Wang
+Liyue Zhang
+Lei Xu
+Leyi Xia
+Mingchuan Zhang
+Minghua Zhang
+Minghui Tang
+Mingxu Zhou
+Meng Li
+Miaojun Wang
+Mingming Li
+Ning Tian
+Panpan Huang
+Peng Zhang
+Qiancheng Wang
+Qinyu Chen
+Qiushi Du
+Ruiqi Ge*
+Ruisong Zhang
+Ruizhe Pan
+Runji Wang
+R.J. Chen
+R.L. Jin
+20
+
+--- PAGE BREAK ---
+Ruyi Chen
+Shanghao Lu
+Shangyan Zhou
+Shanhuang Chen
+Shengfeng Ye
+Shiyu Wang
+Shuiping Yu
+Shunfeng Zhou
+Shuting Pan
+S.S. Li
+Shuang Zhou
+Shaoqing Wu
+Shengfeng Ye
+Tao Yun
+Tian Pei
+Tianyu Sun
+T. Wang
+Wangding Zeng
+Wen Liu
+Wenfeng Liang
+Wenjun Gao
+Wenqin Yu*
+Wentao Zhang
+W.L. Xiao
+Wei An
+Xiaodong Liu
+Xiaohan Wang
+Xiaokang Chen
+Xiaotao Nie
+Xin Cheng
+Xin Liu
+Xin Xie
+Xingchao Liu
+Xinyu Yang
+Xinyuan Li
+Xuecheng Su
+Xuheng Lin
+X.Q. Li
+Xiangyue Jin
+Xiaojin Shen
+Xiaosha Chen
+Xiaowen Sun
+Xiaoxiang Wang
+Xinnan Song
+Xinyi Zhou
+Xianzu Wang
+Xinxia Shan
+Y.K. Li
+Y.Q. Wang
+Y.X. Wei
+Yang Zhang
+Yanhong Xu
+Yao Li
+Yao Zhao
+Yaofeng Sun
+Yaohui Wang
+Yi Yu
+Yichao Zhang
+Yifan Shi
+Yiliang Xiong
+Ying He
+Yishi Piao
+Yisong Wang
+Yixuan Tan
+Yiyang Ma*
+Yiyuan Liu
+Yongqiang Guo
+Yuan Ou
+Yuduan Wang
+Yue Gong
+Yuheng Zou
+Yujia He
+Yunfan Xiong
+Yuxiang Luo
+Yuxiang You
+Yuxuan Liu
+Yuyang Zhou
+Y.X. Zhu
+Yanping Huang
+Yaohui Li
+Yi Zheng
+Yuchen Zhu
+Yunxian Ma
+Ying Tang
+Yukun Zha
+Yuting Yan
+Z.Z. Ren
+Zehui Ren
+Zhangli Sha
+Zhe Fu
+Zhean Xu
+Zhenda Xie
+Zhengyan Zhang
+Zhewen Hao
+Zhicheng Ma
+Zhigang Yan
+Zhiyu Wu
+Zihui Gu
+21
+
+--- PAGE BREAK ---

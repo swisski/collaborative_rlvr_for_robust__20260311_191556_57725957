@@ -1,0 +1,151 @@
+Model
+AIME 2024
+MATH-500
+GPQA
+LiveCode
+CodeForces
+Diamond
+Bench
+pass@1
+cons@64
+pass@1
+pass@1
+pass@1
+rating
+OpenAI-o1-mini
+63.6
+80.0
+90.0
+60.0
+53.8
+1820
+OpenAI-o1-0912
+74.4
+83.3
+94.8
+77.3
+63.4
+1843
+DeepSeek-R1-Zero
+71.0
+86.7
+95.9
+73.3
+50.0
+1444
+Table 2 | Comparison of DeepSeek-R1-Zero and OpenAI o1 models on reasoning-related
+benchmarks.
+Figure 2 | AIME accuracy of DeepSeek-R1-Zero during training. For each question, we sample
+16 responses and calculate the overall average accuracy to ensure a stable evaluation.
+DeepSeek-R1-Zero to attain robust reasoning capabilities without the need for any supervised
+fine-tuning data. This is a noteworthy achievement, as it underscores the model’s ability to
+learn and generalize effectively through RL alone. Additionally, the performance of DeepSeek-
+R1-Zero can be further augmented through the application of majority voting. For example,
+when majority voting is employed on the AIME benchmark, DeepSeek-R1-Zero’s performance
+escalates from 71.0% to 86.7%, thereby exceeding the performance of OpenAI-o1-0912. The
+ability of DeepSeek-R1-Zero to achieve such competitive performance, both with and without
+majority voting, highlights its strong foundational capabilities and its potential for further
+advancements in reasoning tasks.
+Self-evolution Process of DeepSeek-R1-Zero
+The self-evolution process of DeepSeek-R1-Zero
+is a fascinating demonstration of how RL can drive a model to improve its reasoning capabilities
+autonomously. By initiating RL directly from the base model, we can closely monitor the model’s
+progression without the influence of the supervised fine-tuning stage. This approach provides
+a clear view of how the model evolves over time, particularly in terms of its ability to handle
+complex reasoning tasks.
+As depicted in Figure 3, the thinking time of DeepSeek-R1-Zero shows consistent improve-
+7
+
+--- PAGE BREAK ---
+Figure 3 | The average response length of DeepSeek-R1-Zero on the training set during the RL
+process. DeepSeek-R1-Zero naturally learns to solve reasoning tasks with more thinking time.
+ment throughout the training process. This improvement is not the result of external adjustments
+but rather an intrinsic development within the model. DeepSeek-R1-Zero naturally acquires the
+ability to solve increasingly complex reasoning tasks by leveraging extended test-time compu-
+tation. This computation ranges from generating hundreds to thousands of reasoning tokens,
+allowing the model to explore and refine its thought processes in greater depth.
+One of the most remarkable aspects of this self-evolution is the emergence of sophisticated
+behaviors as the test-time computation increases. Behaviors such as reflection—where the model
+revisits and reevaluates its previous steps—and the exploration of alternative approaches to
+problem-solving arise spontaneously. These behaviors are not explicitly programmed but instead
+emerge as a result of the model’s interaction with the reinforcement learning environment. This
+spontaneous development significantly enhances DeepSeek-R1-Zero’s reasoning capabilities,
+enabling it to tackle more challenging tasks with greater efficiency and accuracy.
+Aha Moment of DeepSeek-R1-Zero
+A particularly intriguing phenomenon observed during
+the training of DeepSeek-R1-Zero is the occurrence of an “aha moment”. This moment, as
+illustrated in Table 3, occurs in an intermediate version of the model. During this phase,
+DeepSeek-R1-Zero learns to allocate more thinking time to a problem by reevaluating its initial
+approach. This behavior is not only a testament to the model’s growing reasoning abilities
+but also a captivating example of how reinforcement learning can lead to unexpected and
+sophisticated outcomes.
+This moment is not only an “aha moment” for the model but also for the researchers
+observing its behavior. It underscores the power and beauty of reinforcement learning: rather
+than explicitly teaching the model on how to solve a problem, we simply provide it with the
+right incentives, and it autonomously develops advanced problem-solving strategies. The
+“aha moment” serves as a powerful reminder of the potential of RL to unlock new levels of
+intelligence in artificial systems, paving the way for more autonomous and adaptive models in
+the future.
+8
+
+--- PAGE BREAK ---
+Question: If 𝑎> 1, then the sum of the real solutions of
+√︁
+𝑎−√
+𝑎+ 𝑥= 𝑥is equal to
+Response: <think>
+To solve the equation
+√︁
+𝑎−√
+𝑎+ 𝑥= 𝑥, let’s start by squaring both · · ·
+√︁
+𝑎−√
+𝑎+ 𝑥
+2
+= 𝑥2 =⇒𝑎−√
+𝑎+ 𝑥= 𝑥2.
+Rearrange to isolate the inner square root term:
+(𝑎−𝑥2)2 = 𝑎+ 𝑥=⇒𝑎2 −2𝑎𝑥2 + (𝑥2)2 = 𝑎+ 𝑥=⇒𝑥4 −2𝑎𝑥2 −𝑥+ (𝑎2 −𝑎) = 0
+. . .
+Wait, wait. Wait. That’s an aha moment I can flag here.
+Let’s reevaluate this step-by-step to identify if the correct sum can be · · ·
+We started with the equation:
+√︁
+𝑎−√
+𝑎+ 𝑥= 𝑥
+First, let’s square both sides:
+𝑎−√
+𝑎+ 𝑥= 𝑥2 =⇒√
+𝑎+ 𝑥= 𝑎−𝑥2
+Next, I could square both sides again, treating the equation: · · ·
+. . .
+Table 3 | An interesting “aha moment” of an intermediate version of DeepSeek-R1-Zero. The
+model learns to rethink using an anthropomorphic tone. This is also an aha moment for us,
+allowing us to witness the power and beauty of reinforcement learning.
+Drawback of DeepSeek-R1-Zero
+Although DeepSeek-R1-Zero exhibits strong reasoning
+capabilities and autonomously develops unexpected and powerful reasoning behaviors, it faces
+several issues. For instance, DeepSeek-R1-Zero struggles with challenges like poor readability,
+and language mixing. To make reasoning processes more readable and share them with the
+open community, we explore DeepSeek-R1, a method that utilizes RL with human-friendly
+cold-start data.
+2.3. DeepSeek-R1: Reinforcement Learning with Cold Start
+Inspired by the promising results of DeepSeek-R1-Zero, two natural questions arise: 1) Can
+reasoning performance be further improved or convergence accelerated by incorporating a small
+amount of high-quality data as a cold start? 2) How can we train a user-friendly model that
+not only produces clear and coherent Chains of Thought (CoT) but also demonstrates strong
+general capabilities? To address these questions, we design a pipeline to train DeepSeek-R1. The
+pipeline consists of four stages, outlined as follows.
+2.3.1. Cold Start
+Unlike DeepSeek-R1-Zero, to prevent the early unstable cold start phase of RL training from
+the base model, for DeepSeek-R1 we construct and collect a small amount of long CoT data
+to fine-tune the model as the initial RL actor. To collect such data, we have explored several
+approaches: using few-shot prompting with a long CoT as an example, directly prompting
+models to generate detailed answers with reflection and verification, gathering DeepSeek-R1-
+Zero outputs in a readable format, and refining the results through post-processing by human
+annotators.
+In this work, we collect thousands of cold-start data to fine-tune the DeepSeek-V3-Base as
+the starting point for RL. Compared to DeepSeek-R1-Zero, the advantages of cold start data
+9
+
+--- PAGE BREAK ---

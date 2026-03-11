@@ -1,0 +1,14 @@
+# Exclude large dataset files (Arrow/Parquet format saved by HuggingFace datasets)
+*/data/
+*.arrow
+*.parquet
+*.bin
+
+# HuggingFace cache
+.cache/
+__pycache__/
+
+# Keep sample files and documentation
+!samples/
+!README.md
+!.gitignore

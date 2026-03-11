@@ -1,0 +1,81 @@
+{
+  "summary": {
+    "single": {
+      "orig_acc": 0.6,
+      "orig_n": 15,
+      "orig_ci": [
+        0.3333333333333333,
+        0.8666666666666667
+      ],
+      "sym_acc": 0.6,
+      "sym_n": 30,
+      "sym_ci": [
+        0.43333333333333335,
+        0.7666666666666667
+      ],
+      "robustness_ratio": 1.0,
+      "accuracy_drop": 0.0
+    },
+    "sc3": {
+      "orig_acc": 0.5333333333333333,
+      "orig_n": 15,
+      "orig_ci": [
+        0.26666666666666666,
+        0.8
+      ],
+      "sym_acc": 0.5666666666666667,
+      "sym_n": 30,
+      "sym_ci": [
+        0.4,
+        0.7333333333333333
+      ],
+      "robustness_ratio": 1.0625,
+      "accuracy_drop": -0.033333333333333326
+    },
+    "debate": {
+      "orig_acc": 0.5333333333333333,
+      "orig_n": 15,
+      "orig_ci": [
+        0.26666666666666666,
+        0.8
+      ],
+      "sym_acc": 0.5666666666666667,
+      "sym_n": 30,
+      "sym_ci": [
+        0.4,
+        0.7333333333333333
+      ],
+      "robustness_ratio": 1.0625,
+      "accuracy_drop": -0.033333333333333326
+    }
+  },
+  "debate_dynamics": {
+    "total": 45,
+    "initial_agree": 29,
+    "initial_disagree": 16,
+    "flip_to_correct": 1,
+    "flip_to_wrong": 1,
+    "stayed_correct": 24,
+    "stayed_wrong": 19
+  },
+  "statistical_tests": {
+    "single_vs_sc3": {
+      "p_value": 0.6170750774519739,
+      "a_only": 3,
+      "b_only": 1,
+      "cohens_h": 0.13464177238010566
+    },
+    "single_vs_debate": {
+      "p_value": 0.6830913983096086,
+      "a_only": 4,
+      "b_only": 2,
+      "cohens_h": 0.13464177238010566
+    },
+    "sc3_vs_debate": {
+      "p_value": 0.6170750774519739,
+      "a_only": 2,
+      "b_only": 2,
+      "cohens_h": 0.0
+    }
+  }
+}
